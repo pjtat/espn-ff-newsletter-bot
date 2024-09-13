@@ -1,0 +1,632 @@
+[
+    {
+        "weekNumber": 1,
+        "matchupNumber": 1,
+        "awayTeamId": 6,
+        "awayTeamScore": 127.3,
+        "homeTeamId": 9,
+        "homeTeamScore": 140.4,
+        "winner": 9
+    },
+    {
+        "weekNumber": 1,
+        "matchupNumber": 2,
+        "awayTeamId": 3,
+        "awayTeamScore": 129.0,
+        "homeTeamId": 4,
+        "homeTeamScore": 126.7,
+        "winner": 3
+    },
+    {
+        "weekNumber": 1,
+        "matchupNumber": 3,
+        "awayTeamId": 2,
+        "awayTeamScore": 118.9,
+        "homeTeamId": 7,
+        "homeTeamScore": 125.6,
+        "winner": 7
+    },
+    {
+        "weekNumber": 1,
+        "matchupNumber": 4,
+        "awayTeamId": 13,
+        "awayTeamScore": 100.4,
+        "homeTeamId": 1,
+        "homeTeamScore": 139.9,
+        "winner": 1
+    },
+    {
+        "weekNumber": 1,
+        "matchupNumber": 5,
+        "awayTeamId": 5,
+        "awayTeamScore": 116.7,
+        "homeTeamId": 11,
+        "homeTeamScore": 88.1,
+        "winner": 5
+    },
+    {
+        "weekNumber": 2,
+        "matchupNumber": 6,
+        "awayTeamId": 3,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 6,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 2,
+        "matchupNumber": 7,
+        "awayTeamId": 9,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 2,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 2,
+        "matchupNumber": 8,
+        "awayTeamId": 4,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 13,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 2,
+        "matchupNumber": 9,
+        "awayTeamId": 7,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 2,
+        "matchupNumber": 10,
+        "awayTeamId": 1,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 11,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 3,
+        "matchupNumber": 11,
+        "awayTeamId": 6,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 2,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 3,
+        "matchupNumber": 12,
+        "awayTeamId": 13,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 3,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 3,
+        "matchupNumber": 13,
+        "awayTeamId": 5,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 9,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 3,
+        "matchupNumber": 14,
+        "awayTeamId": 11,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 4,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 3,
+        "matchupNumber": 15,
+        "awayTeamId": 1,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 7,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 4,
+        "matchupNumber": 16,
+        "awayTeamId": 13,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 6,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 4,
+        "matchupNumber": 17,
+        "awayTeamId": 2,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 4,
+        "matchupNumber": 18,
+        "awayTeamId": 3,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 11,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 4,
+        "matchupNumber": 19,
+        "awayTeamId": 9,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 1,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 4,
+        "matchupNumber": 20,
+        "awayTeamId": 4,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 7,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 5,
+        "matchupNumber": 21,
+        "awayTeamId": 6,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 5,
+        "matchupNumber": 22,
+        "awayTeamId": 11,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 13,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 5,
+        "matchupNumber": 23,
+        "awayTeamId": 1,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 2,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 5,
+        "matchupNumber": 24,
+        "awayTeamId": 7,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 3,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 5,
+        "matchupNumber": 25,
+        "awayTeamId": 4,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 9,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 6,
+        "matchupNumber": 26,
+        "awayTeamId": 11,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 6,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 6,
+        "matchupNumber": 27,
+        "awayTeamId": 5,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 1,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 6,
+        "matchupNumber": 28,
+        "awayTeamId": 13,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 7,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 6,
+        "matchupNumber": 29,
+        "awayTeamId": 2,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 4,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 6,
+        "matchupNumber": 30,
+        "awayTeamId": 3,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 9,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 7,
+        "matchupNumber": 31,
+        "awayTeamId": 6,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 1,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 7,
+        "matchupNumber": 32,
+        "awayTeamId": 7,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 11,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 7,
+        "matchupNumber": 33,
+        "awayTeamId": 4,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 7,
+        "matchupNumber": 34,
+        "awayTeamId": 9,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 13,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 7,
+        "matchupNumber": 35,
+        "awayTeamId": 3,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 2,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 8,
+        "matchupNumber": 36,
+        "awayTeamId": 7,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 6,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 8,
+        "matchupNumber": 37,
+        "awayTeamId": 1,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 4,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 8,
+        "matchupNumber": 38,
+        "awayTeamId": 11,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 9,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 8,
+        "matchupNumber": 39,
+        "awayTeamId": 5,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 3,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 8,
+        "matchupNumber": 40,
+        "awayTeamId": 13,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 2,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 9,
+        "matchupNumber": 41,
+        "awayTeamId": 6,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 4,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 9,
+        "matchupNumber": 42,
+        "awayTeamId": 9,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 7,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 9,
+        "matchupNumber": 43,
+        "awayTeamId": 3,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 1,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 9,
+        "matchupNumber": 44,
+        "awayTeamId": 2,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 11,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 9,
+        "matchupNumber": 45,
+        "awayTeamId": 13,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 10,
+        "matchupNumber": 46,
+        "awayTeamId": 9,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 6,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 10,
+        "matchupNumber": 47,
+        "awayTeamId": 4,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 3,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 10,
+        "matchupNumber": 48,
+        "awayTeamId": 7,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 2,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 10,
+        "matchupNumber": 49,
+        "awayTeamId": 11,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 13,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 10,
+        "matchupNumber": 50,
+        "awayTeamId": 1,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 11,
+        "matchupNumber": 51,
+        "awayTeamId": 6,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 3,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 11,
+        "matchupNumber": 52,
+        "awayTeamId": 2,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 11,
+        "matchupNumber": 53,
+        "awayTeamId": 13,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 4,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 11,
+        "matchupNumber": 54,
+        "awayTeamId": 9,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 7,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 11,
+        "matchupNumber": 55,
+        "awayTeamId": 11,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 1,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 12,
+        "matchupNumber": 56,
+        "awayTeamId": 2,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 6,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 12,
+        "matchupNumber": 57,
+        "awayTeamId": 1,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 13,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 12,
+        "matchupNumber": 58,
+        "awayTeamId": 9,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 12,
+        "matchupNumber": 59,
+        "awayTeamId": 4,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 11,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 12,
+        "matchupNumber": 60,
+        "awayTeamId": 7,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 3,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 13,
+        "matchupNumber": 61,
+        "awayTeamId": 3,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 13,
+        "matchupNumber": 62,
+        "awayTeamId": 1,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 9,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 13,
+        "matchupNumber": 63,
+        "awayTeamId": 4,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 2,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 13,
+        "matchupNumber": 64,
+        "awayTeamId": 11,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 6,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 13,
+        "matchupNumber": 65,
+        "awayTeamId": 7,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 13,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 14,
+        "matchupNumber": 66,
+        "awayTeamId": 11,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 5,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 14,
+        "matchupNumber": 67,
+        "awayTeamId": 13,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 3,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 14,
+        "matchupNumber": 68,
+        "awayTeamId": 2,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 9,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 14,
+        "matchupNumber": 69,
+        "awayTeamId": 7,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 4,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    },
+    {
+        "weekNumber": 14,
+        "matchupNumber": 70,
+        "awayTeamId": 6,
+        "awayTeamScore": 0.0,
+        "homeTeamId": 1,
+        "homeTeamScore": 0.0,
+        "winner": "tie"
+    }
+]
