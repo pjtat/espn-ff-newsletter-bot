@@ -1,0 +1,122 @@
+{
+    "1": {
+        "teamName": "D:cker Til She Waddles",
+        "teamAbbrev": "LAMB",
+        "ownerId": "{BEAF742F-B7A6-4F3D-83FE-89F609804AA2}",
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "totalPointsFor": 139.9,
+        "totalPointsAgainst": 100.4,
+        "ownerFirstName": "Sean",
+        "ownerLastName": "Dobson"
+    },
+    "2": {
+        "teamName": "Youngh03, Big Kupps",
+        "teamAbbrev": "BEP",
+        "ownerId": "{5DF83CAC-7A14-4BCD-B83C-AC7A14BBCDC5}",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "totalPointsFor": 118.9,
+        "totalPointsAgainst": 125.6,
+        "ownerFirstName": "Brett",
+        "ownerLastName": "Dusch"
+    },
+    "3": {
+        "teamName": "Blue Dolphin",
+        "teamAbbrev": "swag",
+        "ownerId": "{049CC4E6-F81E-4FE4-9CC4-E6F81E8FE4E1}",
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "totalPointsFor": 129.0,
+        "totalPointsAgainst": 126.7,
+        "ownerFirstName": "Nick",
+        "ownerLastName": "Serafino"
+    },
+    "4": {
+        "teamName": "Best Mahome in the Naberhood",
+        "teamAbbrev": "Zaun",
+        "ownerId": "{4918E72B-8495-4B5D-B3FE-7DD7DF8588F7}",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "totalPointsFor": 126.7,
+        "totalPointsAgainst": 129.0,
+        "ownerFirstName": "Jack",
+        "ownerLastName": "Zaun"
+    },
+    "5": {
+        "teamName": "Las Chubacabras",
+        "teamAbbrev": "GOAT",
+        "ownerId": "{3E11F700-BE0C-4EB3-8787-605D4723B083}",
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "totalPointsFor": 116.7,
+        "totalPointsAgainst": 88.1,
+        "ownerFirstName": "Brian",
+        "ownerLastName": "Hoyson"
+    },
+    "6": {
+        "teamName": "Aiyuk to be a Piece of $h!t",
+        "teamAbbrev": "BOYL",
+        "ownerId": "{CD3CE4A6-333C-44A7-8145-6876AEBDE7AB}",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "totalPointsFor": 127.3,
+        "totalPointsAgainst": 140.4,
+        "ownerFirstName": "Ryan",
+        "ownerLastName": "Boyle"
+    },
+    "7": {
+        "teamName": "Bozos Dobbed Over Circus League",
+        "teamAbbrev": "BOZO",
+        "ownerId": "{B6CAEBA9-F067-42E3-BA15-D9CEB1886017}",
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "totalPointsFor": 125.6,
+        "totalPointsAgainst": 118.9,
+        "ownerFirstName": "Peej",
+        "ownerLastName": "Tatano"
+    },
+    "9": {
+        "teamName": "LaPorta Della \ud83e\udd0c\ud83c\udffc",
+        "teamAbbrev": "SHOT",
+        "ownerId": "{CC9F4C14-1535-4BCA-B067-5306573C289C}",
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "totalPointsFor": 140.4,
+        "totalPointsAgainst": 127.3,
+        "ownerFirstName": "Justin ",
+        "ownerLastName": "Monito "
+    },
+    "11": {
+        "teamName": "Three's a Stroud",
+        "teamAbbrev": "Toph",
+        "ownerId": "{7B012F7E-7BF8-42D2-812F-7E7BF8F2D26E}",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "totalPointsFor": 88.1,
+        "totalPointsAgainst": 116.7,
+        "ownerFirstName": "Chris",
+        "ownerLastName": "Allegretti"
+    },
+    "13": {
+        "teamName": "Rome wasn't built in Odunze",
+        "teamAbbrev": "FITZ",
+        "ownerId": "{C2E5066A-6E64-4D79-BE8B-88DA422D743E}",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "totalPointsFor": 100.4,
+        "totalPointsAgainst": 139.9,
+        "ownerFirstName": "Brendan",
+        "ownerLastName": "Fitzpatrick"
+    }
+}
