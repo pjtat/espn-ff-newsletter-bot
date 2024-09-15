@@ -2,7 +2,7 @@ import requests
 import json
 import os
 
-from myconstants import league_id, espn_cookies, headers
+from leagueInformation import league_id, espn_cookies, headers
 
 year = 2024
 
@@ -12,18 +12,18 @@ boxscore_request = requests.get(url, headers=headers, cookies=espn_cookies, para
 boxscore_request_json = boxscore_request.json()
 boxscore_request_json = boxscore_request_json['schedule']
 
-leagueInfoRequest = requests.get(url, headers=headers, cookies=espn_cookies, params={"view": "mNav"})
-leagueInfoRequestJson = leagueInfoRequest.json()
+league_info_request = requests.get(url, headers=headers, cookies=espn_cookies, params={"view": "mNav"})
+league_info_request_json = league_info_request.json()
 
-topPerformersRequest = requests.get(url, headers=headers, cookies=espn_cookies, params={"view": "mScoreboard"})
-topPerformersRequestJson = topPerformersRequest.json()
+top_performers_request = requests.get(url, headers=headers, cookies=espn_cookies, params={"view": "mScoreboard"})
+top_performers_request_json = top_performers_request.json()
 
-leagueTeams = leagueInfoRequestJson['teams']
-leagueOwners = leagueInfoRequestJson['members']
+league_teams = league_info_request_json ['teams']
+league_owners = league_info_request_json ['members']
 
-leagueInfo = {}
+league_info = {}
 
-for team in leagueTeams:
+for team in league_teams:
     team_info = {
         'teamName': team['name'],
         'teamAbbrev': team['abbrev'],
@@ -34,87 +34,84 @@ for team in leagueTeams:
         'totalPointsFor': 0,
         'totalPointsAgainst': 0
     }
-    leagueInfo[team['id']] = team_info
+    league_info[team['id']] = team_info
 
-for owner in leagueOwners:
+for owner in league_owners:
     ownerInfo = {
         'ownerFirstName': owner['firstName'],
         'ownerLastName': owner['lastName'],
     }
-    for team_id, team in leagueInfo.items():
+    for team_id, team in league_info.items():
         if team['ownerId'] == owner['id']:
-            leagueInfo[team_id].update(ownerInfo)
+            league_info[team_id].update(ownerInfo)
             break
 
 yearly_boxscores = []
-lastWeekResults =  []
+last_week_results =  []
 
 for matchup in boxscore_request_json:
     if(matchup['away']['totalPoints'] == 0 and matchup['home']['totalPoints'] == 0):
         break
 
-    weekNumber = matchup['matchupPeriodId']
-    matchupNumber = matchup['id']
-    awayTeamId = matchup['away']['teamId']
-    homeTeamId = matchup['home']['teamId']
+    week_number = matchup['matchupPeriodId']
+    matchup_number = matchup['id']
+    away_team_id = matchup['away']['teamId']
+    home_team_id = matchup['home']['teamId']
     
     if matchup['winner'] == 'AWAY':
-        winner = awayTeamId
-        leagueInfo[awayTeamId]['wins'] += 1
-        leagueInfo[homeTeamId]['losses'] += 1
+        winner = away_team_id
+        league_info[away_team_id]['wins'] += 1
+        league_info[home_team_id]['losses'] += 1
     elif matchup['winner'] == 'HOME':
-        winner = homeTeamId
-        leagueInfo[homeTeamId]['wins'] += 1
-        leagueInfo[awayTeamId]['losses'] += 1
+        winner = home_team_id
+        league_info[home_team_id]['wins'] += 1
+        league_info[away_team_id]['losses'] += 1
     else:
         winner = 'tie'
-        leagueInfo[awayTeamId]['ties'] += 1
-        leagueInfo[homeTeamId]['ties'] += 1
+        league_info[away_team_id]['ties'] += 1
+        league_info[home_team_id]['ties'] += 1
 
-    awayTeamScore = matchup['away']['totalPoints']
-    leagueInfo[awayTeamId]['totalPointsFor'] += awayTeamScore
-    leagueInfo[awayTeamId]['totalPointsAgainst'] += matchup['home']['totalPoints']
-    homeTeamScore = matchup['home']['totalPoints']
-    leagueInfo[homeTeamId]['totalPointsFor'] += homeTeamScore
-    leagueInfo[homeTeamId]['totalPointsAgainst'] += awayTeamScore
+    away_team_score = matchup['away']['totalPoints']
+    league_info[away_team_id]['totalPointsFor'] += away_team_score
+    league_info[away_team_id]['totalPointsAgainst'] += home_team_score
+    home_team_score = matchup['home']['totalPoints']
+    league_info[home_team_id]['totalPointsFor'] += home_team_score
+    league_info[home_team_id]['totalPointsAgainst'] += away_team_score
 
     matchup_info = {
-        'weekNumber': weekNumber,
-        'matchupNumber': matchupNumber,
-        'awayTeamId': awayTeamId,
-        'awayTeamScore': awayTeamScore,
-        'homeTeamId': homeTeamId,
-        'homeTeamScore': homeTeamScore,
+        'weekNumber': week_number,
+        'matchupNumber': matchup_number,
+        'awayTeamId': away_team_id,
+        'awayTeamScore': away_team_score,
+        'homeTeamId': home_team_id,
+        'homeTeamScore': home_team_score,
         'winner': winner,
     }
 
     yearly_boxscores.append(matchup_info)
 
-    lastWeekResults.append(matchup_info)
+    last_week_results.append(matchup_info)
 
-weekNumber = lastWeekResults[0]['weekNumber']
+week_number = last_week_results[0]['weekNumber']
 
-weeklySummary = (f'In week {weekNumber} the results were:')
+weekly_summary = (f'In week {week_number} the results were:')
 
-for result in lastWeekResults:
-   matchupNumber = result['matchupNumber']
-   awayTeamId = result['awayTeamId']
-   homeTeamId = result['homeTeamId']
-   awayTeamScore = result['awayTeamScore']
-   homeTeamScore = result['homeTeamScore']
+for result in last_week_results:
+   matchup_number = result['matchupNumber']
+   away_team_id = result['awayTeamId']
+   home_team_id = result['homeTeamId']
+   away_team_score = result['awayTeamScore']
+   home_team_score = result['homeTeamScore']
    winner = result['winner']
 
-   homeTeamName = leagueInfo[homeTeamId]['teamName']
-   homeTeamOwner = leagueInfo[homeTeamId]['ownerFirstName']
-   awayTeamName = leagueInfo[awayTeamId]['teamName']
-   awayTeamOwner = leagueInfo[awayTeamId]['ownerFirstName']
+   home_team_name = league_info[home_team_id]['teamName']
+   home_team_owner = league_info[home_team_id]['ownerFirstName']
+   away_team_name = league_info[away_team_id]['teamName']
+   away_team_owner = league_info[away_team_id]['ownerFirstName']
 
-   weeklySummary += (f'\nIn matchup {matchupNumber}, {homeTeamName} led by {homeTeamOwner} beat {awayTeamName} led by {awayTeamOwner} with a score of {homeTeamScore} to {awayTeamScore}.')
+   weekly_summary += (f'\nIn matchup {matchup_number}, {home_team_name} led by {home_team_owner} beat {away_team_name} led by {away_team_owner} with a score of {home_team_score} to {away_team_score}.')
 
-print(weeklySummary)
-
-
-
+print(weekly_summary)
 
 
 
@@ -133,13 +130,13 @@ with open(json_file_path1, 'w') as f:
     json.dump(yearly_boxscores, f, indent=4)
 
 with open(json_file_path2, 'w') as f:
-    json.dump(leagueInfo, f, indent=4)
+    json.dump(league_info, f, indent=4)
 
 with open(json_file_path3, 'w') as f:
-    json.dump(leagueInfoRequestJson, f, indent=4)
+    json.dump(league_info_request_json , f, indent=4)
 
 with open(json_file_path4, 'w') as f:
-    json.dump(topPerformersRequestJson, f, indent=4)
+    json.dump(top_performers_request_json, f, indent=4)
 
 
 
