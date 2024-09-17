@@ -1,0 +1,250 @@
+{
+    "draftDetail": {
+        "completeDate": 1725325331035,
+        "drafted": true,
+        "inProgress": false
+    },
+    "gameId": 1,
+    "id": 963482,
+    "members": [
+        {
+            "displayName": "nserafino14",
+            "firstName": "Nick",
+            "id": "{049CC4E6-F81E-4FE4-9CC4-E6F81E8FE4E1}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Serafino"
+        },
+        {
+            "displayName": "bhoyson",
+            "firstName": "Brian",
+            "id": "{3E11F700-BE0C-4EB3-8787-605D4723B083}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Hoyson"
+        },
+        {
+            "displayName": "coolrunningss",
+            "firstName": "Jack",
+            "id": "{4918E72B-8495-4B5D-B3FE-7DD7DF8588F7}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Zaun"
+        },
+        {
+            "displayName": "Brett_1317",
+            "firstName": "Brett",
+            "id": "{5DF83CAC-7A14-4BCD-B83C-AC7A14BBCDC5}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Dusch"
+        },
+        {
+            "displayName": "Chris Allegretti",
+            "firstName": "Chris",
+            "id": "{7B012F7E-7BF8-42D2-812F-7E7BF8F2D26E}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Allegretti"
+        },
+        {
+            "displayName": "p2thej5",
+            "firstName": "Peej",
+            "id": "{B6CAEBA9-F067-42E3-BA15-D9CEB1886017}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Tatano"
+        },
+        {
+            "displayName": "Dobby1093",
+            "firstName": "Sean",
+            "id": "{BEAF742F-B7A6-4F3D-83FE-89F609804AA2}",
+            "isLeagueCreator": true,
+            "isLeagueManager": false,
+            "lastName": "Dobson"
+        },
+        {
+            "displayName": "bigbaby1294",
+            "firstName": "Brendan",
+            "id": "{C2E5066A-6E64-4D79-BE8B-88DA422D743E}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Fitzpatrick"
+        },
+        {
+            "displayName": "JQ5740",
+            "firstName": "Justin ",
+            "id": "{CC9F4C14-1535-4BCA-B067-5306573C289C}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Monito "
+        },
+        {
+            "displayName": "boylepsu1",
+            "firstName": "Ryan",
+            "id": "{CD3CE4A6-333C-44A7-8145-6876AEBDE7AB}",
+            "isLeagueCreator": false,
+            "isLeagueManager": false,
+            "lastName": "Boyle"
+        }
+    ],
+    "scoringPeriodId": 3,
+    "seasonId": 2024,
+    "segmentId": 0,
+    "settings": {
+        "acquisitionSettings": {
+            "isUsingAcquisitionBudget": true
+        },
+        "draftSettings": {
+            "keeperCount": 1
+        },
+        "isCustomizable": true,
+        "isPublic": false,
+        "name": "Next Year's 8-Man League",
+        "rosterSettings": {
+            "isUsingUndroppableList": false
+        },
+        "scoringSettings": {
+            "scoringType": "H2H_POINTS"
+        }
+    },
+    "status": {
+        "activatedDate": 1721264042323,
+        "createdAsLeagueType": 0,
+        "currentLeagueType": 0,
+        "currentMatchupPeriod": 3,
+        "finalScoringPeriod": 17,
+        "firstScoringPeriod": 1,
+        "isActive": true,
+        "isExpired": false,
+        "isFull": true,
+        "isPlayoffMatchupEdited": false,
+        "isToBeDeleted": false,
+        "isViewable": true,
+        "isWaiverOrderEdited": false,
+        "latestScoringPeriod": 3,
+        "previousSeasons": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023
+        ],
+        "standingsUpdateDate": 1726557267619,
+        "teamsJoined": 10,
+        "transactionScoringPeriod": 3,
+        "waiverLastExecutionDate": 1726557265180,
+        "waiverProcessStatus": {
+            "2024-09-04T07:07:11.163+0000": 1,
+            "2024-09-11T07:45:57.433+0000": 2
+        }
+    },
+    "teams": [
+        {
+            "abbrev": "LAMB",
+            "id": 1,
+            "logo": "https://i.postimg.cc/0Nqmcj81/rein.gif",
+            "logoType": "CUSTOM_VALID",
+            "name": "D:cker Til She Waddles",
+            "owners": [
+                "{BEAF742F-B7A6-4F3D-83FE-89F609804AA2}"
+            ]
+        },
+        {
+            "abbrev": "BEP",
+            "id": 2,
+            "logo": "https://cosmicbook.news/wp-content/uploads/2023/03/sydney-sweeney-frankies-bikinis.jpg",
+            "logoType": "CUSTOM_VALID",
+            "name": "Youngh03, Big Kupps",
+            "owners": [
+                "{5DF83CAC-7A14-4BCD-B83C-AC7A14BBCDC5}"
+            ]
+        },
+        {
+            "abbrev": "swag",
+            "id": 3,
+            "logo": "https://c.tenor.com/wK3iA5P0TtAAAAAM/pointing-i-think-you-should-leave-with-tim-robinson.gif",
+            "logoType": "CUSTOM_VALID",
+            "name": "Blue Dolphin",
+            "owners": [
+                "{049CC4E6-F81E-4FE4-9CC4-E6F81E8FE4E1}"
+            ]
+        },
+        {
+            "abbrev": "Zaun",
+            "id": 4,
+            "logo": "https://sopranosautopsy.files.wordpress.com/2013/06/the-finger.jpg",
+            "logoType": "CUSTOM_VALID",
+            "name": "Best Mahome in the Naberhood",
+            "owners": [
+                "{4918E72B-8495-4B5D-B3FE-7DD7DF8588F7}"
+            ]
+        },
+        {
+            "abbrev": "GOAT",
+            "id": 5,
+            "logo": "https://imgur.com/LzhqM4C.jpg",
+            "logoType": "CUSTOM_VALID",
+            "name": "Las Chubacabras",
+            "owners": [
+                "{3E11F700-BE0C-4EB3-8787-605D4723B083}"
+            ]
+        },
+        {
+            "abbrev": "BOYL",
+            "id": 6,
+            "logo": "https://media0.giphy.com/media/2wZvJ85AS1KA8bRq3w/giphy.gif",
+            "logoType": "CUSTOM",
+            "name": "Aiyuk to be a Piece of $h!t",
+            "owners": [
+                "{CD3CE4A6-333C-44A7-8145-6876AEBDE7AB}"
+            ]
+        },
+        {
+            "abbrev": "BOZO",
+            "id": 7,
+            "logo": "https://i.postimg.cc/3xfNQ4Wf/Screenshot-2024-09-01-at-7-34-35-PM.png",
+            "logoType": "CUSTOM",
+            "name": "Bozos Dobbed Over Circus League",
+            "owners": [
+                "{B6CAEBA9-F067-42E3-BA15-D9CEB1886017}"
+            ]
+        },
+        {
+            "abbrev": "SHOT",
+            "id": 9,
+            "logo": "https://salumipasini.com/wp-content/uploads/Mortadella_Con_Pistacchi_1003JF-1.jpg",
+            "logoType": "CUSTOM_VALID",
+            "name": "LaPorta Della \ud83e\udd0c\ud83c\udffc",
+            "owners": [
+                "{CC9F4C14-1535-4BCA-B067-5306573C289C}"
+            ]
+        },
+        {
+            "abbrev": "Toph",
+            "id": 11,
+            "logo": "https://i.ytimg.com/vi/Z5B3HFue8I4/mqdefault.jpg",
+            "logoType": "CUSTOM_VALID",
+            "name": "Three's a Stroud",
+            "owners": [
+                "{7B012F7E-7BF8-42D2-812F-7E7BF8F2D26E}"
+            ]
+        },
+        {
+            "abbrev": "FITZ",
+            "id": 13,
+            "logo": "https://g.espncdn.com/lm-static/logo-packs/ffl/GridironWarriors-MartinLaksman/warriors-02.svg",
+            "logoType": "VECTOR",
+            "name": "Rome wasn't built in Odunze",
+            "owners": [
+                "{C2E5066A-6E64-4D79-BE8B-88DA422D743E}"
+            ]
+        }
+    ]
+}
