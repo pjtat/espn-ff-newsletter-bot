@@ -12,9 +12,6 @@ def main():
     # Fetch data
     boxscore_data = api_client.get_boxscore_data(current_week_number)
 
-    # Export incoming data - DELETE LATER
-    json_exporter.save_file('boxscore_data.json', boxscore_data)
-
     # Create Boxscore JSON
     boxscore_weekly_summary = create_boxscore_weekly_summary(boxscore_data, current_week_number)
 
@@ -23,9 +20,6 @@ def main():
 
     # Get team data
     team_data = api_client.get_team_data()
-
-    # Export incoming team data - DELETE LATER
-    json_exporter.save_file('team_data.json', team_data)
 
     # Create Team Data JSON
     team_data_summary = create_team_data_summary(team_data)
