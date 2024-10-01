@@ -1,41 +1,25 @@
 import requests
 
-from leagueInformation import league_id, espn_cookies, headers, year
+from leagueInformation import LEAGUE_ID, ESPN_COOKIES, HEADERS, YEAR
 
 class ESPNApiClient:
     def __init__(self):
-        self.base_url = f'https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{year}/segments/0/leagues/{league_id}'
+        self.base_url = f'https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{YEAR}/segments/0/leagues/{LEAGUE_ID}'
 
     def _make_request(self, params):
-        return requests.get(self.base_url, headers=headers, cookies=espn_cookies, params=params).json()
+        try:
+            response = requests.get(self.base_url, headers=HEADERS, cookies=ESPN_COOKIES, params=params)
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.RequestException as e:
+            print(f"Error making request: {e}")
+            return None
+        except ValueError as e:
+            print(f"Error parsing JSON response: {e}")
+            return None
 
-    # def get_boxscore_data(self):
-    #     return self._make_request({"view": "mMatchup"})['schedule']
-
-    def get_matchup_data(self):
-        return self._make_request({"view": "mMatchup"})
-
-    def get_nav_data(self):
-        return self._make_request({"view": "mNav"})
-    
-    def get_roster_data(self):
-        return self._make_request({"view": "mRoster"})
-    
-    def get_settings_data(self):
-        return self._make_request({"view": "mSettings"})
-    
-    def get_top_performers_data(self):
-        return self._make_request({"view": "mTopPerformers"})
-    
-    def get_matchup_score_data(self):
-        return self._make_request({"view": "mMatchupScore"})
+    def get_boxscore_data(self, season_week):
+        return self._make_request({"view": "mBoxscore", "scoringPeriodId": season_week})
     
     def get_team_data(self):
         return self._make_request({"view": "mTeam"})
-    
-    def get_scoreboard_data(self):
-        return self._make_request({"view": "mScoreboard"})
-    
-    def get_status_data(self):
-        return self._make_request({"view": "mStatus"})
-    
