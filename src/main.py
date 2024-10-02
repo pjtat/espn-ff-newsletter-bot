@@ -1,30 +1,33 @@
+# Import all necessary files for functions below
 from espn_api_client import ESPNApiClient
 from json_exporter import JsonExporter
 from data_extractor import create_boxscore_weekly_summary, create_team_data_summary
 
-## TEMP 
+# Temporary - Need to find a way to automate
+# Provide the week number value to determine which week to pull data for
 current_week_number = 2
 
 def main():
+    # Initialize API client and JSON exporter
     api_client = ESPNApiClient()
     json_exporter = JsonExporter()
 
-    # Fetch data
+    # Fetch boxscore data for the current week from the ESPN API 
     boxscore_data = api_client.get_boxscore_data(current_week_number)
 
-    # Create Boxscore JSON
+    # Process boxscore data and create weekly summary to provide to ChatGPT
     boxscore_weekly_summary = create_boxscore_weekly_summary(boxscore_data, current_week_number)
 
-    # Export outgoing data 
+    # Export boxscore weekly summary to JSON file for reference
     json_exporter.save_file('boxscore_weekly_summary.json', boxscore_weekly_summary)
 
-    # Get team data
+    # Fetch team data from the ESPN API
     team_data = api_client.get_team_data()
 
-    # Create Team Data JSON
+    # Process team data and create summary to provide to ChatGPT
     team_data_summary = create_team_data_summary(team_data)
 
-    # Export outgoing data
+    # Export team data summary to JSON file for reference
     json_exporter.save_file('team_data_summary.json', team_data_summary)
 
 if __name__ == "__main__":
