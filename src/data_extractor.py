@@ -1,5 +1,5 @@
 # Import the lineup slot mapping to translate the player positions
-from espn_league_input import LINEUP_SLOT_MAPPING 
+from config import LINEUP_SLOT_MAPPING 
 
 def create_boxscore_weekly_summary(mBoxscore_json, current_week_number):
     """
@@ -126,6 +126,7 @@ def create_team_data_summary(mTeam_json):
             'team_abbrev': team['abbrev'],
             'team_name': team['name'],
             'team_owner': owner_name,
+            'team_rank': team['playoffSeed'],
             'team_record': {
                 'wins': team['record']['overall']['wins'],
                 'losses': team['record']['overall']['losses'],
@@ -143,3 +144,12 @@ def create_team_data_summary(mTeam_json):
         team_weekly_summary['teams'].append(team_info)
 
     return team_weekly_summary
+
+def pull_week_number(league_data):
+    # Pull the current week number from the league data
+    current_week_number = league_data['status']['currentMatchupPeriod']
+    
+    # Subtract 1 from the current week number to get the previous week's recap
+    previous_week_number = current_week_number - 1
+
+    return previous_week_number

@@ -1,7 +1,7 @@
 import requests
 
 # Bring in variables needed for API requests 
-from espn_league_input import LEAGUE_ID, ESPN_COOKIES, HEADERS, YEAR
+from config import LEAGUE_ID, ESPN_COOKIES, HEADERS, YEAR
 
 class ESPNApiClient:
     def __init__(self):
@@ -32,3 +32,8 @@ class ESPNApiClient:
     def get_team_data(self):
         # Fetch team data for the league
         return self._make_request({"view": "mTeam"})
+    
+    def get_league_data(self):
+        # Fetch team data for the league
+        return self._make_request({"view": "mNav"})
+    

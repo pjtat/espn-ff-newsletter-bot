@@ -5,6 +5,7 @@
             "team_abbrev": "LAMB",
             "team_name": "D:cker Til She Waddles",
             "team_owner": "Sean Dobson",
+            "team_rank": 7,
             "team_record": {
                 "wins": 1,
                 "losses": 3,
@@ -22,6 +23,7 @@
             "team_abbrev": "BEP",
             "team_name": "Youngh03, Big Kupps",
             "team_owner": "Brett Dusch",
+            "team_rank": 3,
             "team_record": {
                 "wins": 3,
                 "losses": 1,
@@ -39,6 +41,7 @@
             "team_abbrev": "swag",
             "team_name": "Blue Dolphin",
             "team_owner": "Nick Serafino",
+            "team_rank": 1,
             "team_record": {
                 "wins": 4,
                 "losses": 0,
@@ -56,6 +59,7 @@
             "team_abbrev": "Zaun",
             "team_name": "Best Mahome in the Naberhood",
             "team_owner": "Jack Zaun",
+            "team_rank": 5,
             "team_record": {
                 "wins": 2,
                 "losses": 2,
@@ -73,6 +77,7 @@
             "team_abbrev": "GOAT",
             "team_name": "Las Chubacabras",
             "team_owner": "Brian Hoyson",
+            "team_rank": 8,
             "team_record": {
                 "wins": 1,
                 "losses": 3,
@@ -90,6 +95,7 @@
             "team_abbrev": "BOYL",
             "team_name": "Aiyuk to be a Piece of $h!t",
             "team_owner": "Ryan Boyle",
+            "team_rank": 10,
             "team_record": {
                 "wins": 0,
                 "losses": 4,
@@ -107,6 +113,7 @@
             "team_abbrev": "BOZO",
             "team_name": "Bozos Dobbed Over Circus League",
             "team_owner": "Peej Tatano",
+            "team_rank": 2,
             "team_record": {
                 "wins": 4,
                 "losses": 0,
@@ -124,6 +131,7 @@
             "team_abbrev": "SHOT",
             "team_name": "LaPorta Della \ud83e\udd0c\ud83c\udffc",
             "team_owner": "Justin  Monito ",
+            "team_rank": 4,
             "team_record": {
                 "wins": 3,
                 "losses": 1,
@@ -141,6 +149,7 @@
             "team_abbrev": "Toph",
             "team_name": "Three's a Stroud",
             "team_owner": "Chris Allegretti",
+            "team_rank": 9,
             "team_record": {
                 "wins": 1,
                 "losses": 3,
@@ -158,6 +167,7 @@
             "team_abbrev": "FITZ",
             "team_name": "Rome wasn't built in Odunze",
             "team_owner": "Brendan Fitzpatrick",
+            "team_rank": 6,
             "team_record": {
                 "wins": 1,
                 "losses": 3,
