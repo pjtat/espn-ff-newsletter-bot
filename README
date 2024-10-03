@@ -21,13 +21,11 @@ This project automates the process of generating and sending weekly recaps for a
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/fantasy-football-recap-generator.git
+   git clone https://github.com/pjtat/espn-ff-newsletter-bot.git
    ```
 
 2. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+   [To update later]
 
 3. Set up your environment variables:
    - `ESPN_S2`: Your ESPN S2 cookie
