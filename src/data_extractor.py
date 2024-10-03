@@ -1,5 +1,5 @@
 # Import the lineup slot mapping to translate the player positions
-from leagueInformation import LINEUP_SLOT_MAPPING 
+from espn_league_input import LINEUP_SLOT_MAPPING 
 
 def create_boxscore_weekly_summary(mBoxscore_json, current_week_number):
     """

@@ -1,7 +1,7 @@
 import requests
 
 # Bring in variables needed for API requests 
-from leagueInformation import LEAGUE_ID, ESPN_COOKIES, HEADERS, YEAR
+from espn_league_input import LEAGUE_ID, ESPN_COOKIES, HEADERS, YEAR
 
 class ESPNApiClient:
     def __init__(self):

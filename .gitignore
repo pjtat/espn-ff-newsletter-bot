@@ -1,2 +1,3 @@
-leagueInformation.py
-**/__pycache__/
+src/espn_league_input.py
+src/chatgpt_input.py
+Src/__pycache__/
