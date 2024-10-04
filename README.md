@@ -26,14 +26,17 @@ This project automates the process of generating and sending weekly recaps for a
     ```
 
 2. Install the required dependencies:
-   [To update later]
+
+    1. `poetry install`
+    2. `poetry shell` to enter a shell with the virtual environment activated with your installed dependencies
 
 3. Set up your environment variables:
-    - `ESPN_S2`: Your ESPN S2 cookie
-    - `SWID`: Your ESPN SWID cookie
-    - `OPENAI_API_KEY`: Your OpenAI API key
-    - `EMAIL_ADDRESS`: Your email address for sending recaps
-    - `EMAIL_PASSWORD`: Your email password or app-specific password
+
+-   `ESPN_S2`: Your ESPN S2 cookie
+-   `SWID`: Your ESPN SWID cookie
+-   `OPENAI_API_KEY`: Your OpenAI API key
+-   `EMAIL_ADDRESS`: Your email address for sending recaps
+-   `EMAIL_PASSWORD`: Your email password or app-specific password
 
 ## Usage
 
