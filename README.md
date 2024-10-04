@@ -13,6 +13,7 @@ This project automates the process of generating and sending weekly recaps for a
 ## Prerequisites
 
 - Python 3.11+
+- [Poetry](https://python-poetry.org/docs/#installing-with-the-official-installer)
 - ESPN API access
 - OpenAI API key
 - SMTP server access for sending emails
