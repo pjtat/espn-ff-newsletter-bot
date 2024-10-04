@@ -40,9 +40,6 @@ def main():
     # Convert to HTML for sending via email 
     fantasy_recap_html = convert_fantasy_recap_to_html(fantasy_recap)
 
-    # Export the recap to HTML file for reference
-    json_exporter.save_file('fantasy_recap.json', fantasy_recap_html)
-
     # Send the generated recap via email
     send_email("Multi-Recipient Test - Next Year's 8 Man League - Week " + str(recap_week_number) + " Recap", fantasy_recap_html)
 
