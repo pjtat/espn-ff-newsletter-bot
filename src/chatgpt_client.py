@@ -29,11 +29,11 @@ def generate_fantasy_recap(team_summary, boxscore_summary):
     {json.dumps(boxscore_summary, indent=2)}
 
     Guidelines:
+    - Use ONLY the matchups provided in the Weekly Matchup Data. Do not invent or mix up matchups.
     - Highlight key matchups, surprise performances, and notable storylines.
     - Use sarcasm, humor, and be rude, edgy, and creative when mocking underperforming teams.
     - Use player data from the boxscores to comment on over- or under-performance, and missed starts.
     - Recap each of the 5 matchups in roughly 6 sentences.
-    - Use ONLY the matchups provided in the Weekly Matchup Data. Do not invent or mix up matchups.
     - For each matchup, use the exact team names as they appear in the Weekly Matchup Data.
     - List team names (e.g., "Team A vs. Team B") at the start of each recap, ensuring they match the Weekly Matchup Data.
     - Always refer to owners by first name, which can be found in the League Team Data.

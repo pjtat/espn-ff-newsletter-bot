@@ -145,7 +145,7 @@ def create_team_data_summary(mTeam_json):
 
     return team_weekly_summary
 
-def pull_week_number(league_data):
+def determine_recap_week_number(league_data):
     # Pull the current week number from the league data
     current_week_number = league_data['status']['currentMatchupPeriod']
     
