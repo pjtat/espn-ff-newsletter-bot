@@ -22,7 +22,8 @@ def send_email(subject, html_body):
 
         # Modify html_body to include the centered logo
         centered_logo_html = '<div style="text-align: center;"><img src="cid:logo" alt="Logo"></div>'
-        html_body = f'{centered_logo_html}<br>{html_body}'
+        newsletter_personality_headshot = '<img src="cid:newsletter_personality_headshot" alt="Newsletter Personality Headshot">'
+        html_body = f'{centered_logo_html}<br>{html_body}<br>{newsletter_personality_headshot}'
         msg.attach(MIMEText(html_body, 'html'))
 
         # Connect to the SMTP server

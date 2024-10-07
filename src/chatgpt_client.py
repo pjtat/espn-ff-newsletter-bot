@@ -48,6 +48,7 @@ def generate_fantasy_recap(boxscore_summary):
     - Write in {NEWSLETTER_PERSONALITY['name']}'s tone
     - Use the provided characteristics and catchphrases
     - Stay consistent with the personality's style throughout
+    - Sign the email as {NEWSLETTER_PERSONALITY['name']}
 
     2. MATCHUP RECAP REQUIREMENTS:
     - Each matchup recap MUST be at least 6 sentences long
