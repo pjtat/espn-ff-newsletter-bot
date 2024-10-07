@@ -153,3 +153,18 @@ def determine_recap_week_number(league_data):
     previous_week_number = current_week_number - 1
 
     return previous_week_number
+
+def add_team_data_to_weekly_summary(boxscore_weekly_summary, team_weekly_summary):
+    """
+    Add team data to the weekly boxscore summary.
+
+    Args:
+    boxscore_weekly_summary (dict): The weekly boxscore summary to add to
+    team_weekly_summary (dict): The team data to add
+    """
+    for matchup in boxscore_weekly_summary['weekly_boxscores']:
+        for team_location in ['home', 'away']:
+            team_id = matchup[team_location]['team_id']
+            for team in team_weekly_summary['teams']:
+                if team['team_id'] == team_id:
+                    matchup[team_location]['team_info'] = team

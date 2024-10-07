@@ -1,9 +1,8 @@
 # Import all necessary files for functions below
 from espn_api_client import ESPNApiClient
 from json_exporter import JsonExporter
-from file_exporter import PdfExporter
-from chatgpt_client import generate_fantasy_recap, convert_fantasy_recap_to_html
-from data_extractor import create_boxscore_weekly_summary, create_team_data_summary, determine_recap_week_number
+from chatgpt_client import *
+from data_extractor import *
 from email_client import send_email
 from config import LEAGUE_NAME
 
@@ -11,7 +10,6 @@ def main():
     # # Initialize API client and JSON exporter
     api_client = ESPNApiClient()
     json_exporter = JsonExporter()
-    pdf_exporter = PdfExporter()
 
     # Fetch the league data to identify the current week number
     league_data = api_client.get_league_data()
@@ -37,8 +35,11 @@ def main():
     # Export boxscore weekly summary to JSON file for reference
     json_exporter.save_file('boxscore_weekly_summary.json', boxscore_weekly_summary)
 
+    # Add team data to the weekly boxscore summary
+    add_team_data_to_weekly_summary(boxscore_weekly_summary, team_data_summary)
+
     # Call ChatGPT to generate a recap of the latest week's fantasy football league results
-    fantasy_recap = generate_fantasy_recap(team_data_summary, boxscore_weekly_summary)
+    fantasy_recap = generate_fantasy_recap(boxscore_weekly_summary)
 
     # Export the generated recap to a JSON file for reference
     json_exporter.save_file('fantasy_recap.json', fantasy_recap)
@@ -48,9 +49,6 @@ def main():
 
     # Send the generated recap via email
     send_email(f"{LEAGUE_NAME} - Week {recap_week_number} Recap", fantasy_recap_html)
-
-    # Export the generated recap to a PDF file
-    pdf_exporter.export_to_pdf(fantasy_recap)
 
 if __name__ == "__main__":
     main()

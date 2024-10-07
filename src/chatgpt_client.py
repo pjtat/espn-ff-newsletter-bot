@@ -6,7 +6,7 @@ from config import CHATGPT_API_KEY
 # Set up your OpenAI API client
 client = openai.OpenAI(api_key=CHATGPT_API_KEY)
 
-def generate_fantasy_recap(team_summary, boxscore_summary):
+def generate_fantasy_recap(boxscore_summary):
     """
     Generates a funny recap of the latest fantasy football league results.
     """
@@ -22,9 +22,6 @@ def generate_fantasy_recap(team_summary, boxscore_summary):
     - Top 6 teams make playoffs; top 2 get a bye
     - The winner gets a trophy and bragging rights; last place gets punished
 
-    League Team Data:
-    {json.dumps(team_summary, indent=2)}
-
     Weekly Matchup Data:
     {json.dumps(boxscore_summary, indent=2)}
 
@@ -33,8 +30,6 @@ def generate_fantasy_recap(team_summary, boxscore_summary):
     - Highlight key matchups, surprise performances, and notable storylines.
     - Use sarcasm, humor, and be rude, edgy, and creative when mocking underperforming teams.
     - Use player data from the boxscores to comment on over- or under-performance, and missed starts.
-    - Recap each of the 5 matchups in roughly 6 sentences.
-    - For each matchup, use the exact team names as they appear in the Weekly Matchup Data.
     - List team names (e.g., "Team A vs. Team B") at the start of each recap, ensuring they match the Weekly Matchup Data.
     - Always refer to owners by first name, which can be found in the League Team Data.
     - End each matchup with owner names and final scores (e.g., "Jake beat Brian 124.5-117.2"), using the exact scores from the Weekly Matchup Data.
