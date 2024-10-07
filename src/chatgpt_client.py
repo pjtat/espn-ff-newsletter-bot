@@ -33,9 +33,11 @@ def generate_fantasy_recap(team_summary, boxscore_summary):
     - Use sarcasm, humor, and be rude, edgy, and creative when mocking underperforming teams.
     - Use player data from the boxscores to comment on over- or under-performance, and missed starts.
     - Recap each of the 5 matchups in roughly 6 sentences.
-    - List team names (e.g., "Team A vs. Team B") at the start of each recap.
-    - Always refer to owners by first name.
-    - End each matchup with owner names and final scores (e.g., "Jake beat Brian 24-17").
+    - Use ONLY the matchups provided in the Weekly Matchup Data. Do not invent or mix up matchups.
+    - For each matchup, use the exact team names as they appear in the Weekly Matchup Data.
+    - List team names (e.g., "Team A vs. Team B") at the start of each recap, ensuring they match the Weekly Matchup Data.
+    - Always refer to owners by first name, which can be found in the League Team Data.
+    - End each matchup with owner names and final scores (e.g., "Jake beat Brian 124.5-117.2"), using the exact scores from the Weekly Matchup Data.
 
     Standings:
     - Rank teams by their current rank value
