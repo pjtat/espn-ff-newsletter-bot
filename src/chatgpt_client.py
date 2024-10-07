@@ -29,6 +29,8 @@ def generate_fantasy_recap(boxscore_summary):
     - BIO: {NEWSLETTER_PERSONALITY['bio']}
     - TONE: {NEWSLETTER_PERSONALITY['tone']}
     - CATCHPHRASES: {NEWSLETTER_PERSONALITY['catchphrases']}
+    - FANTASY FOOTBALL ADAPTATIONS: {NEWSLETTER_PERSONALITY['fantasy_football_adaptations']}
+    - FORMATTING PREFERENCES: {NEWSLETTER_PERSONALITY['formatting_preferences']}
 
     League Overview:
     - 10-team PPR league
@@ -58,16 +60,12 @@ def generate_fantasy_recap(boxscore_summary):
         * Closing thoughts with the exact final score
 
     3. STRUCTURAL REQUIREMENTS:
-    - Cover each matchup in detail (6+ sentences each)
+    - Cover each matchup in detail (8+ sentences each)
     - Include a standings section with:
         * Current ranks
         * Team records (W-L)
         * Total points
         * Owner names
-    - End with predictions about:
-        * Potential playoff teams
-        * Teams in danger of last place
-        * Highest point scorers
 
     4. ACCURACY REQUIREMENTS:
     - Use only real matchup data from the provided boxscore
@@ -79,7 +77,7 @@ def generate_fantasy_recap(boxscore_summary):
     """   
     
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
             {"role": "user", "content": prompt}

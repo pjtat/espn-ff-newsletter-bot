@@ -39,3 +39,32 @@ LINEUP_SLOT_MAPPING = {
     '23': ('starters', 'FLEX'),
     '17': ('starters', 'K'),
 }
+
+# Define the personalities for the newsletter recaps
+NEWSLETTER_PERSONALITY = {
+    "name": "",
+    "bio": "",
+    "catchphrases": [
+        ""
+    ],
+    "tone_characteristics": [
+        ""
+    ],
+    "fantasy_football_adaptations": {
+        "common_reactions": [
+            ""
+        ],
+        "analysis_style": [
+            ""
+        ],
+        "signature_segments": [
+            ""
+        ]
+    },
+    "formatting_preferences": {
+        "capitalization": "",
+        "punctuation": "",
+        "paragraph_structure": "",
+        "emphasis_patterns": ["", "", ""]
+    }
+}
