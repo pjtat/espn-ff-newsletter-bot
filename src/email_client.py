@@ -20,6 +20,13 @@ def send_email(subject, html_body):
         image.add_header('Content-ID', '<logo>')
         msg.attach(image)
 
+        # Attach the newsletter personality headshot
+        with open('newsletter_personality_headshot.png', 'rb') as f:
+            img_data = f.read()
+        image = MIMEImage(img_data, name=os.path.basename('newsletter_personality_headshot.png'))
+        image.add_header('Content-ID', '<newsletter_personality_headshot>')
+        msg.attach(image)
+
         # Modify html_body to include the centered logo
         centered_logo_html = '<div style="text-align: center;"><img src="cid:logo" alt="Logo"></div>'
         newsletter_personality_headshot = '<img src="cid:newsletter_personality_headshot" alt="Newsletter Personality Headshot">'
