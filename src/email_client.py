@@ -13,14 +13,15 @@ def send_email(subject, html_body):
     msg['Subject'] = subject
 
     # Attach the logo
-    with open('path/to/logo.png', 'rb') as f:
+    with open('logo.png', 'rb') as f:
         img_data = f.read()
-    image = MIMEImage(img_data, name=os.path.basename('path/to/logo.png'))
+    image = MIMEImage(img_data, name=os.path.basename('logo.png'))
     image.add_header('Content-ID', '<logo>')
     msg.attach(image)
 
-    # Modify html_body to include the logo
-    html_body = f'<img src="cid:logo"><br>{html_body}'
+    # Modify html_body to include the centered logo
+    centered_logo_html = '<div style="text-align: center;"><img src="cid:logo" alt="Logo"></div>'
+    html_body = f'{centered_logo_html}<br>{html_body}'
     msg.attach(MIMEText(html_body, 'html'))
 
     # Connect to the SMTP server

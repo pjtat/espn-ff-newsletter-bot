@@ -44,7 +44,7 @@ def main():
     fantasy_recap_html = convert_fantasy_recap_to_html(fantasy_recap)
 
     # Send the generated recap via email
-    send_email("Multi-Recipient Test - Next Year's 8 Man League - Week " + str(recap_week_number) + " Recap", fantasy_recap_html)
+    send_email("Next Year's 8 Man League - Week " + str(recap_week_number) + " Recap", fantasy_recap_html)
 
 if __name__ == "__main__":
     main()
