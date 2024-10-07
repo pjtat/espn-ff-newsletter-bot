@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "espn-ff-newsletter-bot"
+version = "0.1.0"
+description = "This project automates the process of generating and sending weekly recaps for a fantasy football league using data from the ESPN API and OpenAI's GPT model."
+authors = ["PJ Tatano <pjtatano@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.51.0"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
