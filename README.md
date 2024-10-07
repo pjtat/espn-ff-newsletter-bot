@@ -37,7 +37,9 @@ This project automates the process of generating and sending weekly recaps for a
    - `EMAIL_PASSWORD`: Your email password or app-specific password
    - `LEAGUE_NAME`: The name of your league (Used in the subject line of the email)
 
-4. Run the main script to generate and send the weekly recap. Adjust as needed for your league.
+4. Update the ChatGPT prompt in `src/chatgpt_client.py` to align with your league's settings and your desired newsletter format/tone. 
+
+5. Run the main script to generate and send the weekly recap. Adjust as needed for your league.
 
 ## More on the ESPN API
 

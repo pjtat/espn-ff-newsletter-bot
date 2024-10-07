@@ -1,54 +1,87 @@
 import openai
 import os
 import json
-from config import CHATGPT_API_KEY
+from config import CHATGPT_API_KEY, NEWSLETTER_PERSONALITY, LEAGUE_NAME
 
 # Set up your OpenAI API client
 client = openai.OpenAI(api_key=CHATGPT_API_KEY)
 
 def generate_fantasy_recap(boxscore_summary):
     """
-    Generates a funny recap of the latest fantasy football league results.
+    Generates a fantasy football recap in the style of the specified personality.
+    
+    Args:
+        boxscore_summary: Dictionary containing matchup data
+        personality_name: Name of the personality style to use (default: "jon taffer")
+    
+    Returns:
+        str: Generated recap text
+    
+    Raises:
+        ValueError: If personality_name is not recognized
     """
+
+    # Define the prompt for the ChatGPT API call
     prompt = f"""
-    Please provide a funny and engaging recap of the latest week's fantasy football league results.
+    Generate a {NEWSLETTER_PERSONALITY['name']}-style fantasy football recap!
+
+    You are {NEWSLETTER_PERSONALITY['name']}, with the following bio, tone, and catchphrases:
+    - BIO: {NEWSLETTER_PERSONALITY['bio']}
+    - TONE: {NEWSLETTER_PERSONALITY['tone']}
+    - CATCHPHRASES: {NEWSLETTER_PERSONALITY['catchphrases']}
 
     League Overview:
     - 10-team PPR league
-    - Leage name is "Next Year's 8 Man League"
+    - League name: {LEAGUE_NAME}
     - Starting lineup: 1 QB, 2 RB, 2 WR, 1 TE, 2 FLEX, 1 K
-    - Teams ranked by wins, with total points as a tiebreaker
-    - 14-week regular season, 3-week playoffs
-    - Top 6 teams make playoffs; top 2 get a bye
-    - The winner gets a trophy and bragging rights; last place gets punished
+    - Top 6 make playoffs
+    - Winner gets trophy and bragging rights; last place gets punished
 
     Weekly Matchup Data:
     {json.dumps(boxscore_summary, indent=2)}
 
-    Guidelines:
-    - Use ONLY the matchups provided in the Weekly Matchup Data. Do not invent or mix up matchups.
-    - Highlight key matchups, surprise performances, and notable storylines.
-    - Use sarcasm, humor, and be rude, edgy, and creative when mocking underperforming teams.
-    - Use player data from the boxscores to comment on over- or under-performance, and missed starts.
-    - List team names (e.g., "Team A vs. Team B") at the start of each recap, ensuring they match the Weekly Matchup Data.
-    - Always refer to owners by first name, which can be found in the League Team Data.
-    - End each matchup with owner names and final scores (e.g., "Jake beat Brian 124.5-117.2"), using the exact scores from the Weekly Matchup Data.
+    Writing Guidelines:
+    1. PERSONALITY REQUIREMENTS:
+    - Introduce yourself at the beginning of the recap
+    - Write in {NEWSLETTER_PERSONALITY['name']}'s tone
+    - Use the provided characteristics and catchphrases
+    - Stay consistent with the personality's style throughout
 
-    Standings:
-    - Rank teams by their current rank value
-    - For the standings, list the rank, record (W-L), team name, owner, and total points.
-    - The team with the most wins should be ranked at the top, and teams with fewer wins should follow. If wins are tied, rank by total points (higher points comes first).
+    2. MATCHUP RECAP REQUIREMENTS:
+    - Each matchup recap MUST be at least 6 sentences long
+    - Include the following in EACH matchup recap:
+        * Opening narrative setting up the matchup
+        * Analysis of at least two key player performances
+        * Commentary on lineup decisions (good or bad)
+        * Discussion of "what-if" scenarios with benched players
+        * Specific callouts of impressive or disappointing performances
+        * Closing thoughts with the exact final score
 
-    End the entire recap with:
-    - Listing the team that had the highest weekly score out of all the matchups.
-    - Notes on how teams are trending towards becoming the league winner, the worst team, and the team with the highest overall points.
-    - A listing of the standings including the rank, record (W-L), team name, owner, and total points.
-"""
+    3. STRUCTURAL REQUIREMENTS:
+    - Cover each matchup in detail (6+ sentences each)
+    - Include a standings section with:
+        * Current ranks
+        * Team records (W-L)
+        * Total points
+        * Owner names
+    - End with predictions about:
+        * Potential playoff teams
+        * Teams in danger of last place
+        * Highest point scorers
+
+    4. ACCURACY REQUIREMENTS:
+    - Use only real matchup data from the provided boxscore
+    - Reference actual player performances
+    - Use correct team 
+    - Refer to owners by first name only
+
+    CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE RECAP THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL LENGTH AND CONTENT REQUIREMENTS!
+    """   
     
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "You are a humorous, sarcastic, and edgy fantasy football recap writer."},
+            {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=5000,
