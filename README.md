@@ -26,9 +26,9 @@ This project automates the process of generating and sending weekly recaps for a
    ```
 
 2. Install the required dependencies:
-
     1. `poetry install`
     2. `poetry shell` to enter a shell with the virtual environment activated with your installed dependencies
+
 
 3. Set up your environment variables:
    - `ESPN_S2`: Your ESPN S2 cookie

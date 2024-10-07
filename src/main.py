@@ -37,11 +37,11 @@ def main():
     # Call ChatGPT to generate a recap of the latest week's fantasy football league results
     fantasy_recap = generate_fantasy_recap(team_data_summary, boxscore_weekly_summary)
 
+    # Export the generated recap to a JSON file for reference
+    json_exporter.save_file('fantasy_recap.json', fantasy_recap)
+
     # Convert to HTML for sending via email 
     fantasy_recap_html = convert_fantasy_recap_to_html(fantasy_recap)
-
-    # Export the recap to HTML file for reference
-    json_exporter.save_file('fantasy_recap.json', fantasy_recap_html)
 
     # Send the generated recap via email
     send_email("Multi-Recipient Test - Next Year's 8 Man League - Week " + str(recap_week_number) + " Recap", fantasy_recap_html)
