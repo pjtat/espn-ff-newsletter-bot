@@ -32,12 +32,6 @@ def main():
     # Add team data to the weekly boxscore summary
     add_team_data_to_weekly_summary(boxscore_weekly_summary, team_data_summary)
 
-    # TEMP - Call ChatGPT to generate an individual matchup recap 
-    for matchup in boxscore_weekly_summary['weekly_boxscores']:
-        matchup_recap = generate_matchup_recap(matchup)
-
-        print(matchup_recap)
-
     # Call ChatGPT to generate a recap of the latest week's fantasy football league results
     fantasy_recap = generate_fantasy_recap(boxscore_weekly_summary)
 
