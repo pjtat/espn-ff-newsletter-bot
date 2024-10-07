@@ -86,25 +86,25 @@ def convert_fantasy_recap_to_html(fantasy_recap):
 
     return response.choices[0].message.content.strip()
 
-# def convert_fantasy_recap_to_plain_text(fantasy_recap):
-#     # Remove the existing markdown/formatting from the provided fantasy football recap.
-#     prompt = f"""
-#     Please remove the existing markdown/formatting from the provided fantasy football recap.
+def convert_fantasy_recap_to_plain_text(fantasy_recap):
+    # Remove the existing markdown/formatting from the provided fantasy football recap.
+    prompt = f"""
+    Please remove the existing markdown/formatting from the provided fantasy football recap.
 
-#     Please include the football recap in the plain text response and NOTHING else.
+    Please include the football recap in the plain text response and NOTHING else.
 
-#     {fantasy_recap}
-#     """
+    {fantasy_recap}
+    """
     
-#     response = client.chat.completions.create(
-#         model="gpt-4o-mini",
-#         messages=[
-#             {"role": "system", "content": "You are a plain text formatting expert."},
-#             {"role": "user", "content": prompt}
-#         ],
-#         max_tokens=5000,
-#         n=1,
-#         temperature=0.7,
-#     )
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "system", "content": "You are a plain text formatting expert."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=5000,
+        n=1,
+        temperature=0.7,
+    )
 
-#     return response.choices[0].message.content.strip()
+    return response.choices[0].message.content.strip()

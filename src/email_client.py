@@ -1,6 +1,8 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from email.mime.image import MIMEImage
+import os
 from config import sender_email, sender_password, recipient_emails
 
 def send_email(subject, html_body):
@@ -9,6 +11,16 @@ def send_email(subject, html_body):
     msg['From'] = sender_email
     msg['To'] = ', '.join(recipient_emails)
     msg['Subject'] = subject
+
+    # Attach the logo
+    with open('path/to/logo.png', 'rb') as f:
+        img_data = f.read()
+    image = MIMEImage(img_data, name=os.path.basename('path/to/logo.png'))
+    image.add_header('Content-ID', '<logo>')
+    msg.attach(image)
+
+    # Modify html_body to include the logo
+    html_body = f'<img src="cid:logo"><br>{html_body}'
     msg.attach(MIMEText(html_body, 'html'))
 
     # Connect to the SMTP server
