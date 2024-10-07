@@ -4,6 +4,7 @@ from json_exporter import JsonExporter
 from chatgpt_client import generate_fantasy_recap, convert_fantasy_recap_to_html
 from data_extractor import create_boxscore_weekly_summary, create_team_data_summary, pull_week_number
 from email_client import send_email
+from config import LEAGUE_NAME
 
 def main():
     # # Initialize API client and JSON exporter
@@ -44,7 +45,7 @@ def main():
     fantasy_recap_html = convert_fantasy_recap_to_html(fantasy_recap)
 
     # Send the generated recap via email
-    send_email("Next Year's 8 Man League - Week " + str(recap_week_number) + " Recap", fantasy_recap_html)
+    send_email(f"{LEAGUE_NAME} - Week {recap_week_number} Recap", fantasy_recap_html)
 
 if __name__ == "__main__":
     main()
