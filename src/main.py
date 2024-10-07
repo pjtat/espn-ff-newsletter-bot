@@ -23,26 +23,23 @@ def main():
     # Process team data and create summary to provide to ChatGPT
     team_data_summary = create_team_data_summary(team_data)
 
-    # Export team data summary to JSON file for reference
-    json_exporter.save_file('team_data_summary.json', team_data_summary)
-
     # Fetch boxscore data for the current week from the ESPN API 
     boxscore_data = api_client.get_boxscore_data(recap_week_number)
 
     # Process boxscore data and create weekly summary to provide to ChatGPT
     boxscore_weekly_summary = create_boxscore_weekly_summary(boxscore_data, recap_week_number)
-    
-    # Export boxscore weekly summary to JSON file for reference
-    json_exporter.save_file('boxscore_weekly_summary.json', boxscore_weekly_summary)
 
     # Add team data to the weekly boxscore summary
     add_team_data_to_weekly_summary(boxscore_weekly_summary, team_data_summary)
 
+    # TEMP - Call ChatGPT to generate an individual matchup recap 
+    for matchup in boxscore_weekly_summary['weekly_boxscores']:
+        matchup_recap = generate_matchup_recap(matchup)
+
+        print(matchup_recap)
+
     # Call ChatGPT to generate a recap of the latest week's fantasy football league results
     fantasy_recap = generate_fantasy_recap(boxscore_weekly_summary)
-
-    # Export the generated recap to a JSON file for reference
-    json_exporter.save_file('fantasy_recap.json', fantasy_recap)
 
     # Convert to HTML for sending via email 
     fantasy_recap_html = convert_fantasy_recap_to_html(fantasy_recap)

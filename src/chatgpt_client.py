@@ -9,16 +9,6 @@ client = openai.OpenAI(api_key=CHATGPT_API_KEY)
 def generate_fantasy_recap(boxscore_summary):
     """
     Generates a fantasy football recap in the style of the specified personality.
-    
-    Args:
-        boxscore_summary: Dictionary containing matchup data
-        personality_name: Name of the personality style to use (default: "jon taffer")
-    
-    Returns:
-        str: Generated recap text
-    
-    Raises:
-        ValueError: If personality_name is not recognized
     """
 
     # Define the prompt for the ChatGPT API call
@@ -51,7 +41,6 @@ def generate_fantasy_recap(boxscore_summary):
     - Sign the email as {NEWSLETTER_PERSONALITY['name']}
 
     2. MATCHUP RECAP REQUIREMENTS:
-    - Each matchup recap MUST be at least 6 sentences long
     - Include the following in EACH matchup recap:
         * Opening narrative setting up the matchup
         * Analysis of at least two key player performances
@@ -61,7 +50,7 @@ def generate_fantasy_recap(boxscore_summary):
         * Closing thoughts with the exact final score
 
     3. STRUCTURAL REQUIREMENTS:
-    - Cover each matchup in detail (8+ sentences each)
+    - ALL 5 MATCHUP RECAPS MUST BE BETWEEN 700 AND 800 CHARACTERS LONG
     - Include a standings section with:
         * Current ranks
         * Team records (W-L)
@@ -69,9 +58,9 @@ def generate_fantasy_recap(boxscore_summary):
         * Owner names
 
     4. ACCURACY REQUIREMENTS:
+    - ALL 5 MATCHUP RECAPS MUST BE BETWEEN 700 AND 800 CHARACTERS LONG
     - Use only real matchup data from the provided boxscore
     - Reference actual player performances
-    - Use correct team 
     - Refer to owners by first name only
 
     CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE RECAP THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL LENGTH AND CONTENT REQUIREMENTS!
@@ -83,7 +72,65 @@ def generate_fantasy_recap(boxscore_summary):
             {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=5000,
+        max_tokens=8192,
+        n=1,
+        temperature=0.7,
+    )
+
+    return response.choices[0].message.content.strip()
+
+def generate_matchup_recap(matchup_summary):
+    """
+    Generates a fantasy football recap for the provided matchup in the style of the specified personality.
+    """
+
+    # Define the prompt for the ChatGPT API call
+    prompt = f"""
+    Generate a {NEWSLETTER_PERSONALITY['name']}-style fantasy football recap of the provided matchup!
+
+    You are {NEWSLETTER_PERSONALITY['name']}, with the following bio, tone, and catchphrases:
+    - BIO: {NEWSLETTER_PERSONALITY['bio']}
+    - TONE: {NEWSLETTER_PERSONALITY['tone']}
+    - CATCHPHRASES: {NEWSLETTER_PERSONALITY['catchphrases']}
+    - FANTASY FOOTBALL ADAPTATIONS: {NEWSLETTER_PERSONALITY['fantasy_football_adaptations']}
+    - FORMATTING PREFERENCES: {NEWSLETTER_PERSONALITY['formatting_preferences']}
+
+    Matchup Data:
+    {json.dumps(matchup_summary, indent=2)}
+
+    Writing Guidelines:
+    1. PERSONALITY REQUIREMENTS:
+    - Write in {NEWSLETTER_PERSONALITY['name']}'s tone
+    - Use the provided characteristics and catchphrases
+    - Stay consistent with the personality's style throughout
+
+    2. MATCHUP RECAP REQUIREMENTS:
+    - Include the following in the recap:
+        * Opening narrative setting up the matchup
+        * Analysis of at least two key player performances
+        * Commentary on lineup decisions (good or bad)
+        * Discussion of "what-if" scenarios with benched players
+        * Specific callouts of impressive or disappointing performances
+        * Closing thoughts with the exact final score
+
+    3. STRUCTURAL REQUIREMENTS:
+    - THE RECAP SHOULD BE AT LEAST 700 CHARACTERS LONG
+
+    4. ACCURACY REQUIREMENTS:
+    - Use only real matchup data from the provided boxscore
+    - Reference actual player performances
+    - Refer to owners by first name only
+
+    CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE RECAP THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL LENGTH AND CONTENT REQUIREMENTS!
+    """   
+    
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=8192,
         n=1,
         temperature=0.7,
     )
@@ -108,7 +155,7 @@ def convert_fantasy_recap_to_html(fantasy_recap):
             {"role": "system", "content": "You are a HTML formatting expert."},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=5000,
+        max_tokens=8192,
         n=1,
         temperature=0.7,
     )
