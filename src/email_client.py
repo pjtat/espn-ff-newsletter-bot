@@ -27,10 +27,13 @@ def send_email(subject, html_body):
         image.add_header('Content-ID', '<newsletter_personality_headshot>')
         msg.attach(image)
 
-        # Modify html_body to include the centered logo
+        # Modify html_body to include images and signature
         centered_logo_html = '<div style="text-align: center;"><img src="cid:logo" alt="Logo"></div>'
         newsletter_personality_headshot = '<img src="cid:newsletter_personality_headshot" alt="Newsletter Personality Headshot">'
-        html_body = f'{centered_logo_html}<br>{html_body}<br>{newsletter_personality_headshot}'
+
+        newsletter_personality_signature = "Best, <br>John Taffer<br>"
+
+        html_body = f'{centered_logo_html}<br>{html_body}<br>{newsletter_personality_signature}<br>{newsletter_personality_headshot}'
         msg.attach(MIMEText(html_body, 'html'))
 
         # Connect to the SMTP server

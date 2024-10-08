@@ -162,9 +162,50 @@ def add_team_data_to_weekly_summary(boxscore_weekly_summary, team_weekly_summary
     boxscore_weekly_summary (dict): The weekly boxscore summary to add to
     team_weekly_summary (dict): The team data to add
     """
-    for matchup in boxscore_weekly_summary['weekly_boxscores']:
+
+    consolidated_weekly_summary = boxscore_weekly_summary
+    # Add team data to the weekly boxscore summary
+    for matchup in consolidated_weekly_summary['weekly_boxscores']:
         for team_location in ['home', 'away']:
             team_id = matchup[team_location]['team_id']
             for team in team_weekly_summary['teams']:
                 if team['team_id'] == team_id:
                     matchup[team_location]['team_info'] = team
+    
+    return consolidated_weekly_summary
+
+def create_standings_list(team_data_summary):
+    """
+    Create a standings list from the provided boxscore weekly summary.
+    """
+
+    # Convert the JSON data into teams list first
+    teams = team_data_summary["teams"]  # Assuming your JSON is stored in 'data'
+
+    # Sort teams by projected rank
+    sorted_teams = sorted(teams, key=lambda x: x["team_rank"])
+
+    # Print teams in order of projected rank
+    standings_list = ""
+    for i, team in enumerate(sorted_teams, 1):
+        standings_list += f"{i}. {team['team_name']}, {team['team_owner']} - Record: {team['team_record']['wins']}-{team['team_record']['losses']}-{team['team_record']['ties']}, Total Points: {team['team_record']['points_for']}<br>"
+        
+    standings_list += "\n\n"
+    return standings_list
+
+def determine_weekly_high_points(consolidated_weekly_summary):
+    """
+    Determine the weekly high points from the provided boxscore weekly summary.
+    """
+
+    weekly_high_points = 0
+    weekly_high_point_summary = ""
+
+    for matchup in consolidated_weekly_summary['weekly_boxscores']:
+        for team_location in ['home', 'away']:
+            if weekly_high_points < matchup[team_location]['team_score']:
+                weekly_high_points = matchup[team_location]['team_score']
+                weekly_high_point_summary = f"The weekly high point scorer is {matchup[team_location]['team_info']['team_name']} with {matchup[team_location]['team_score']} points!"
+
+    weekly_high_point_summary += "\n\n"
+    return weekly_high_point_summary

@@ -6,82 +6,13 @@ from config import CHATGPT_API_KEY, NEWSLETTER_PERSONALITY, LEAGUE_NAME
 # Set up your OpenAI API client
 client = openai.OpenAI(api_key=CHATGPT_API_KEY)
 
-def generate_fantasy_recap(boxscore_summary):
+def generate_matchup_recap(individual_matchup_summary, newsletter_text):
     """
-    Generates a fantasy football recap in the style of the specified personality.
-    """
+    Generates a fantasy football recap for an individual matchup.
 
-    # Define the prompt for the ChatGPT API call
-    prompt = f"""
-    Generate a {NEWSLETTER_PERSONALITY['name']}-style fantasy football recap!
-
-    You are {NEWSLETTER_PERSONALITY['name']}, with the following bio, tone, and catchphrases:
-    - BIO: {NEWSLETTER_PERSONALITY['bio']}
-    - TONE: {NEWSLETTER_PERSONALITY['tone']}
-    - CATCHPHRASES: {NEWSLETTER_PERSONALITY['catchphrases']}
-    - FANTASY FOOTBALL ADAPTATIONS: {NEWSLETTER_PERSONALITY['fantasy_football_adaptations']}
-    - FORMATTING PREFERENCES: {NEWSLETTER_PERSONALITY['formatting_preferences']}
-
-    League Overview:
-    - 10-team PPR league
-    - League name: {LEAGUE_NAME}
-    - Starting lineup: 1 QB, 2 RB, 2 WR, 1 TE, 2 FLEX, 1 K
-    - Top 6 make playoffs
-    - Winner gets trophy and bragging rights; last place gets punished
-
-    Weekly Matchup Data:
-    {json.dumps(boxscore_summary, indent=2)}
-
-    Writing Guidelines:
-    1. PERSONALITY REQUIREMENTS:
-    - Introduce yourself at the beginning of the recap
-    - Write in {NEWSLETTER_PERSONALITY['name']}'s tone
-    - Use the provided characteristics and catchphrases
-    - Stay consistent with the personality's style throughout
-    - Sign the email as {NEWSLETTER_PERSONALITY['name']}
-
-    2. MATCHUP RECAP REQUIREMENTS:
-    - Include the following in EACH matchup recap:
-        * Opening narrative setting up the matchup
-        * Analysis of at least two key player performances
-        * Commentary on lineup decisions (good or bad)
-        * Discussion of "what-if" scenarios with benched players
-        * Specific callouts of impressive or disappointing performances
-        * Closing thoughts with the exact final score
-
-    3. STRUCTURAL REQUIREMENTS:
-    - ALL 5 MATCHUP RECAPS MUST BE BETWEEN 700 AND 800 CHARACTERS LONG
-    - Include a standings section with:
-        * Current ranks
-        * Team records (W-L)
-        * Total points
-        * Owner names
-
-    4. ACCURACY REQUIREMENTS:
-    - ALL 5 MATCHUP RECAPS MUST BE BETWEEN 700 AND 800 CHARACTERS LONG
-    - Use only real matchup data from the provided boxscore
-    - Reference actual player performances
-    - Refer to owners by first name only
-
-    CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE RECAP THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL LENGTH AND CONTENT REQUIREMENTS!
-    """   
+    The recap generation was separated into multiple function calls to increase the quality of the responses. 
     
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[
-            {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
-            {"role": "user", "content": prompt}
-        ],
-        max_tokens=8192,
-        n=1,
-        temperature=0.7,
-    )
-
-    return response.choices[0].message.content.strip()
-
-def generate_matchup_recap(matchup_summary):
-    """
-    Generates a fantasy football recap for the provided matchup in the style of the specified personality.
+    Asking for all of the matchup summaries in a single response resulted in matchups that were too small. 
     """
 
     # Define the prompt for the ChatGPT API call
@@ -89,39 +20,37 @@ def generate_matchup_recap(matchup_summary):
     Generate a {NEWSLETTER_PERSONALITY['name']}-style fantasy football recap of the provided matchup!
 
     You are {NEWSLETTER_PERSONALITY['name']}, with the following bio, tone, and catchphrases:
-    - BIO: {NEWSLETTER_PERSONALITY['bio']}
-    - TONE: {NEWSLETTER_PERSONALITY['tone']}
-    - CATCHPHRASES: {NEWSLETTER_PERSONALITY['catchphrases']}
-    - FANTASY FOOTBALL ADAPTATIONS: {NEWSLETTER_PERSONALITY['fantasy_football_adaptations']}
-    - FORMATTING PREFERENCES: {NEWSLETTER_PERSONALITY['formatting_preferences']}
+    {NEWSLETTER_PERSONALITY}
 
     Matchup Data:
-    {json.dumps(matchup_summary, indent=2)}
+    {json.dumps(individual_matchup_summary, indent=2)}
 
     Writing Guidelines:
     1. PERSONALITY REQUIREMENTS:
     - Write in {NEWSLETTER_PERSONALITY['name']}'s tone
-    - Use the provided characteristics and catchphrases
     - Stay consistent with the personality's style throughout
+    - Make jokes, be sarcastic, be edgy, and insult the losing teams
 
     2. MATCHUP RECAP REQUIREMENTS:
     - Include the following in the recap:
-        * Opening narrative setting up the matchup
-        * Analysis of at least two key player performances
+        * Analysis of key player performances
         * Commentary on lineup decisions (good or bad)
         * Discussion of "what-if" scenarios with benched players
         * Specific callouts of impressive or disappointing performances
-        * Closing thoughts with the exact final score
+        * Closing thoughts with the final score
 
     3. STRUCTURAL REQUIREMENTS:
-    - THE RECAP SHOULD BE AT LEAST 700 CHARACTERS LONG
+    - Title the section with [Team A] vs [Team B]
+    - THE RECAP SHOULD BE BETWEEN 700 AND 800 CHARACTERS LONG
+    - THE RECAP SHOULD BE ONE SINGLE PARAGRAPH
 
     4. ACCURACY REQUIREMENTS:
-    - Use only real matchup data from the provided boxscore
+    - DO NOT REPEAT YOURSELF (INCLUDING INFORMATION FROM PREVIOUS RECAPS IN THE NEWSLETTER TEXT)
+    - Use only real matchup data from the provided matchup summary
     - Reference actual player performances
     - Refer to owners by first name only
 
-    CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE RECAP THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL LENGTH AND CONTENT REQUIREMENTS!
+    CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE RECAP THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL REQUIREMENTS!
     """   
     
     response = client.chat.completions.create(
@@ -130,7 +59,96 @@ def generate_matchup_recap(matchup_summary):
             {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=8192,
+        max_tokens=4000,
+        n=1,
+        temperature=0.7,
+    )
+
+    return response.choices[0].message.content.strip()
+
+def generate_newsletter_intro(newsletter_text):
+    """
+    Generates an intro for the newsletter.
+    """
+
+    # Define the prompt for the ChatGPT API call
+    prompt = f"""
+    Generate a {NEWSLETTER_PERSONALITY['name']}-style fantasy football recap for the league. 
+
+    You are {NEWSLETTER_PERSONALITY['name']}, with the following bio, tone, and catchphrases:
+    {NEWSLETTER_PERSONALITY}
+
+    Matchup Summaries:
+    {newsletter_text}
+
+    Writing Guidelines:
+    1. PERSONALITY REQUIREMENTS:
+    - Write in {NEWSLETTER_PERSONALITY['name']}'s tone
+    - Use the provided characteristics and catchphrases
+    - Stay consistent with the personality's style throughout
+
+    2. INTRO REQUIREMENTS:
+    - Write a short intro for the newsletter to introduce the provided recap and standings.
+    - The intro should be 3-4 sentences.
+    - The intro should align with the provided information and NOT repeat it.   
+    - The intro should be engaging and capture the attention of the reader.
+    - Always start the intro with "I'VE BEEN IN THIS BUSINESS FOR 30 YEARS"
+    - DO NOT REPEAT YOURSELF
+
+    CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE RECAP THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL REQUIREMENTS!
+    """   
+    
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=4000,
+        n=1,
+        temperature=0.7,
+    )
+
+    return response.choices[0].message.content.strip()
+
+def generate_newsletter_closing(newsletter_text):
+    """
+    Generates an intro for the newsletter.
+    """
+
+    # Define the prompt for the ChatGPT API call
+    prompt = f"""
+    Generate a {NEWSLETTER_PERSONALITY['name']}-style fantasy football recap for the league. 
+
+    You are {NEWSLETTER_PERSONALITY['name']}, with the following bio, tone, and catchphrases:
+    {NEWSLETTER_PERSONALITY}
+
+    Matchup Summaries:
+    {newsletter_text}
+
+    Writing Guidelines:
+    1. PERSONALITY REQUIREMENTS:
+    - Write in {NEWSLETTER_PERSONALITY['name']}'s tone
+    - Use the provided characteristics and catchphrases
+    - Stay consistent with the personality's style throughout
+
+    2. CLOSING REQUIREMENTS:
+    - Write a short closing for the newsletter to wrap up the recap.
+    - The closing should be 3-4 sentences.
+    - The closing should align with the provided information and NOT repeat it.   
+    - The closing should be engaging and capture the attention of the reader.
+    - DO NOT REPEAT YOURSELF
+
+    CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE CLOSING THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL REQUIREMENTS!
+    """   
+    
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=4000,
         n=1,
         temperature=0.7,
     )
