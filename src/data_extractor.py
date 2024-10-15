@@ -188,7 +188,7 @@ def create_standings_list(team_data_summary):
     # Print teams in order of projected rank
     standings_list = ""
     for i, team in enumerate(sorted_teams, 1):
-        standings_list += f"{i}. {team['team_name']}, {team['team_owner']} - Record: {team['team_record']['wins']}-{team['team_record']['losses']}-{team['team_record']['ties']}, Total Points: {team['team_record']['points_for']}<br>"
+        standings_list += f"{i}. {team['team_name']}, {team['team_owner']} - Record: {team['team_record']['wins']}-{team['team_record']['losses']}-{team['team_record']['ties']}, Total Points: {team['team_record']['points_for']:.2f}<br>"
         
     standings_list += "\n\n"
     return standings_list

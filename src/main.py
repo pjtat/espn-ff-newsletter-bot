@@ -64,7 +64,7 @@ def main():
     fantasy_recap_html = convert_fantasy_recap_to_html(newsletter_text)
 
     # Send the generated recap via email
-    send_email(f"{LEAGUE_NAME} - Week {recap_week_number} Recap by {NEWSLETTER_PERSONALITY['name']}", fantasy_recap_html)
+    send_email(f"{LEAGUE_NAME} - Week {recap_week_number} Recap Provided by {NEWSLETTER_PERSONALITY['name']}", fantasy_recap_html)
 
 if __name__ == "__main__":
     main()

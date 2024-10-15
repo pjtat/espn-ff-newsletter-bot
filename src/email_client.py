@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 import os
-from config import sender_email, sender_password, recipient_emails
+from config import sender_email, sender_password, recipient_emails, NEWSLETTER_PERSONALITY
 
 def send_email(subject, html_body):
     try:
@@ -13,11 +13,13 @@ def send_email(subject, html_body):
         msg['To'] = ', '.join(recipient_emails)
         msg['Subject'] = subject
 
-        # Attach the logo
-        with open('logo.png', 'rb') as f:
+        # Attach the logo with a unique identifier
+        logo_path = 'logo.png'
+        with open(logo_path, 'rb') as f:
             img_data = f.read()
-        image = MIMEImage(img_data, name=os.path.basename('logo.png'))
-        image.add_header('Content-ID', '<logo>')
+        image = MIMEImage(img_data, name=os.path.basename(logo_path))
+        logo_cid = f'logo_{os.path.getmtime(logo_path)}'  # Use file modification time as part of CID
+        image.add_header('Content-ID', f'<{logo_cid}>')
         msg.attach(image)
 
         # Attach the newsletter personality headshot
@@ -27,11 +29,11 @@ def send_email(subject, html_body):
         image.add_header('Content-ID', '<newsletter_personality_headshot>')
         msg.attach(image)
 
-        # Modify html_body to include images and signature
-        centered_logo_html = '<div style="text-align: center;"><img src="cid:logo" alt="Logo"></div>'
+        # Modify html_body to include images with the unique identifier
+        centered_logo_html = f'<div style="text-align: center;"><img src="cid:{logo_cid}" alt="Logo"></div>'
         newsletter_personality_headshot = '<img src="cid:newsletter_personality_headshot" alt="Newsletter Personality Headshot">'
 
-        newsletter_personality_signature = "Best, <br>John Taffer<br>"
+        newsletter_personality_signature = f"Best, <br>{NEWSLETTER_PERSONALITY['name']}<br>"
 
         html_body = f'{centered_logo_html}<br>{html_body}<br>{newsletter_personality_signature}<br>{newsletter_personality_headshot}'
         msg.attach(MIMEText(html_body, 'html'))

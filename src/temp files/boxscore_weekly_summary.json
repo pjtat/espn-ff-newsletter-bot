@@ -1,59 +1,189 @@
 {
-    "week_number": 5,
+    "week_number": 6,
     "weekly_boxscores": [
         {
             "matchup_id": 1,
             "away": {
-                "team_id": 6,
-                "team_score": 121.1,
+                "team_id": 11,
+                "team_score": 129.3,
                 "starters": [
                     {
-                        "player_id": 4361370,
-                        "player_position": "WR",
-                        "player_full_name": "Chris Olave",
-                        "player_pro_team_id": 18,
-                        "player_score_projection": 13.7,
-                        "player_score_actual": 3.0
+                        "player_id": 4430807,
+                        "player_position": "RB",
+                        "player_full_name": "Bijan Robinson",
+                        "player_pro_team_id": 1,
+                        "player_score_projection": 18.2,
+                        "player_score_actual": 25.5
                     },
                     {
-                        "player_id": 4697815,
-                        "player_position": "RB",
-                        "player_full_name": "Rachaad White",
-                        "player_pro_team_id": 27,
-                        "player_score_projection": 12.1,
-                        "player_score_actual": 9.6
+                        "player_id": 4035687,
+                        "player_position": "FLEX",
+                        "player_full_name": "Michael Pittman Jr.",
+                        "player_pro_team_id": 11,
+                        "player_score_projection": 13.7,
+                        "player_score_actual": 12.5
                     },
+                    {
+                        "player_id": 3915416,
+                        "player_position": "WR",
+                        "player_full_name": "DJ Moore",
+                        "player_pro_team_id": 3,
+                        "player_score_projection": 14.8,
+                        "player_score_actual": 6.0
+                    },
+                    {
+                        "player_id": 4385690,
+                        "player_position": "TE",
+                        "player_full_name": "Dalton Kincaid",
+                        "player_pro_team_id": 2,
+                        "player_score_projection": 9.6,
+                        "player_score_actual": 11.1
+                    },
+                    {
+                        "player_id": 4432577,
+                        "player_position": "QB",
+                        "player_full_name": "C.J. Stroud",
+                        "player_pro_team_id": 34,
+                        "player_score_projection": 17.6,
+                        "player_score_actual": 18.3
+                    },
+                    {
+                        "player_id": 4429615,
+                        "player_position": "FLEX",
+                        "player_full_name": "Zay Flowers",
+                        "player_pro_team_id": 33,
+                        "player_score_projection": 14.0,
+                        "player_score_actual": 22.4
+                    },
+                    {
+                        "player_id": 4430878,
+                        "player_position": "WR",
+                        "player_full_name": "Jaxon Smith-Njigba",
+                        "player_pro_team_id": 26,
+                        "player_score_projection": 12.9,
+                        "player_score_actual": 10.3
+                    },
+                    {
+                        "player_id": 4360234,
+                        "player_position": "K",
+                        "player_full_name": "Evan McPherson",
+                        "player_pro_team_id": 4,
+                        "player_score_projection": 8.1,
+                        "player_score_actual": 5.0
+                    },
+                    {
+                        "player_id": 4429501,
+                        "player_position": "RB",
+                        "player_full_name": "Ray Davis",
+                        "player_pro_team_id": 2,
+                        "player_score_projection": 9.7,
+                        "player_score_actual": 18.2
+                    }
+                ],
+                "ir": [
+                    {
+                        "player_id": 3128720,
+                        "player_position": null,
+                        "player_full_name": "Nick Chubb",
+                        "player_pro_team_id": 5,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
+                    }
+                ],
+                "bench": [
+                    {
+                        "player_id": 4379399,
+                        "player_position": null,
+                        "player_full_name": "James Cook",
+                        "player_pro_team_id": 2,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
+                    },
+                    {
+                        "player_id": 4428557,
+                        "player_position": null,
+                        "player_full_name": "Tyjae Spears",
+                        "player_pro_team_id": 10,
+                        "player_score_projection": 10.2,
+                        "player_score_actual": 2.7
+                    },
+                    {
+                        "player_id": 4241463,
+                        "player_position": null,
+                        "player_full_name": "Jerry Jeudy",
+                        "player_pro_team_id": 5,
+                        "player_score_projection": 8.5,
+                        "player_score_actual": 4.5
+                    },
+                    {
+                        "player_id": 4373626,
+                        "player_position": null,
+                        "player_full_name": "Tyler Allgeier",
+                        "player_pro_team_id": 1,
+                        "player_score_projection": 8.2,
+                        "player_score_actual": 19.8
+                    },
+                    {
+                        "player_id": 4361411,
+                        "player_position": null,
+                        "player_full_name": "Pat Freiermuth",
+                        "player_pro_team_id": 23,
+                        "player_score_projection": 8.1,
+                        "player_score_actual": 3.6
+                    },
+                    {
+                        "player_id": 4240021,
+                        "player_position": null,
+                        "player_full_name": "Cam Akers",
+                        "player_pro_team_id": 34,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": -0.1
+                    },
+                    {
+                        "player_id": 4249417,
+                        "player_position": null,
+                        "player_full_name": "Jalen Tolbert",
+                        "player_pro_team_id": 6,
+                        "player_score_projection": 10.9,
+                        "player_score_actual": 8.3
+                    }
+                ]
+            },
+            "home": {
+                "team_id": 6,
+                "team_score": 113.8,
+                "starters": [
                     {
                         "player_id": 4360438,
                         "player_position": "FLEX",
                         "player_full_name": "Brandon Aiyuk",
                         "player_pro_team_id": 25,
-                        "player_score_projection": 13.8,
-                        "player_score_actual": 22.7
+                        "player_score_projection": 15.2,
+                        "player_score_actual": 5.7
                     },
                     {
                         "player_id": 2976212,
-                        "player_position": "FLEX",
+                        "player_position": "WR",
                         "player_full_name": "Stefon Diggs",
                         "player_pro_team_id": 34,
-                        "player_score_projection": 13.8,
-                        "player_score_actual": 14.2
+                        "player_score_projection": 15.3,
+                        "player_score_actual": 19.7
                     },
                     {
                         "player_id": 3116165,
                         "player_position": "WR",
                         "player_full_name": "Chris Godwin",
                         "player_pro_team_id": 27,
-                        "player_score_projection": 15.5,
-                        "player_score_actual": 11.6
+                        "player_score_projection": 15.8,
+                        "player_score_actual": 35.5
                     },
                     {
                         "player_id": 4360248,
                         "player_position": "TE",
                         "player_full_name": "Kyle Pitts",
                         "player_pro_team_id": 1,
-                        "player_score_projection": 7.2,
-                        "player_score_actual": 15.8
+                        "player_score_projection": 10.1,
+                        "player_score_actual": 10.0
                     },
                     {
                         "player_id": 15683,
@@ -64,20 +194,36 @@
                         "player_score_actual": 13.0
                     },
                     {
+                        "player_id": 4032473,
+                        "player_position": "FLEX",
+                        "player_full_name": "Rashid Shaheed",
+                        "player_pro_team_id": 18,
+                        "player_score_projection": 12.5,
+                        "player_score_actual": 8.3
+                    },
+                    {
                         "player_id": 4360569,
                         "player_position": "RB",
                         "player_full_name": "Jordan Mason",
                         "player_pro_team_id": 25,
-                        "player_score_projection": 18.2,
-                        "player_score_actual": 8.8
+                        "player_score_projection": 14.2,
+                        "player_score_actual": 9.2
                     },
                     {
                         "player_id": 15864,
                         "player_position": "QB",
                         "player_full_name": "Geno Smith",
                         "player_pro_team_id": 26,
-                        "player_score_projection": 17.2,
-                        "player_score_actual": 22.4
+                        "player_score_projection": 17.7,
+                        "player_score_actual": 12.4
+                    },
+                    {
+                        "player_id": 4361777,
+                        "player_position": "RB",
+                        "player_full_name": "Zamir White",
+                        "player_pro_team_id": 13,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
                     }
                 ],
                 "ir": [
@@ -95,17 +241,33 @@
                         "player_full_name": "Hollywood Brown",
                         "player_pro_team_id": 12,
                         "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
+                        "player_score_actual": 0
                     }
                 ],
                 "bench": [
+                    {
+                        "player_id": 4361370,
+                        "player_position": null,
+                        "player_full_name": "Chris Olave",
+                        "player_pro_team_id": 18,
+                        "player_score_projection": 11.5,
+                        "player_score_actual": -0.5
+                    },
+                    {
+                        "player_id": 4697815,
+                        "player_position": null,
+                        "player_full_name": "Rachaad White",
+                        "player_pro_team_id": 27,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
+                    },
                     {
                         "player_id": 3116365,
                         "player_position": null,
                         "player_full_name": "Mark Andrews",
                         "player_pro_team_id": 33,
-                        "player_score_projection": 5.6,
-                        "player_score_actual": 9.5
+                        "player_score_projection": 6.4,
+                        "player_score_actual": 15.6
                     },
                     {
                         "player_id": 4429084,
@@ -116,198 +278,28 @@
                         "player_score_actual": 0.0
                     },
                     {
-                        "player_id": 3051926,
-                        "player_position": null,
-                        "player_full_name": "Gus Edwards",
-                        "player_pro_team_id": 24,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 8439,
-                        "player_position": null,
-                        "player_full_name": "Aaron Rodgers",
-                        "player_pro_team_id": 20,
-                        "player_score_projection": 14.1,
-                        "player_score_actual": 11.6
-                    },
-                    {
                         "player_id": 4597500,
                         "player_position": null,
                         "player_full_name": "Adonai Mitchell",
                         "player_pro_team_id": 11,
-                        "player_score_projection": 5.1,
-                        "player_score_actual": 9.0
-                    },
-                    {
-                        "player_id": 4032473,
-                        "player_position": null,
-                        "player_full_name": "Rashid Shaheed",
-                        "player_pro_team_id": 18,
-                        "player_score_projection": 13.0,
-                        "player_score_actual": 18.6
+                        "player_score_projection": 5.8,
+                        "player_score_actual": 2.9
                     },
                     {
                         "player_id": 4048244,
                         "player_position": null,
                         "player_full_name": "Alexander Mattison",
                         "player_pro_team_id": 13,
-                        "player_score_projection": 11.3,
-                        "player_score_actual": 10.1
-                    }
-                ]
-            },
-            "home": {
-                "team_id": 5,
-                "team_score": 127.2,
-                "starters": [
-                    {
-                        "player_id": 4239996,
-                        "player_position": "FLEX",
-                        "player_full_name": "Travis Etienne Jr.",
-                        "player_pro_team_id": 30,
-                        "player_score_projection": 13.7,
-                        "player_score_actual": 12.0
+                        "player_score_projection": 11.2,
+                        "player_score_actual": 17.5
                     },
                     {
-                        "player_id": 4372019,
-                        "player_position": "RB",
-                        "player_full_name": "Jerome Ford",
-                        "player_pro_team_id": 5,
-                        "player_score_projection": 13.1,
-                        "player_score_actual": 7.9
-                    },
-                    {
-                        "player_id": 3052587,
-                        "player_position": "QB",
-                        "player_full_name": "Baker Mayfield",
-                        "player_pro_team_id": 27,
-                        "player_score_projection": 16.4,
-                        "player_score_actual": 23.4
-                    },
-                    {
-                        "player_id": 3886598,
-                        "player_position": "WR",
-                        "player_full_name": "Jauan Jennings",
-                        "player_pro_team_id": 25,
-                        "player_score_projection": 10.2,
-                        "player_score_actual": 2.3
-                    },
-                    {
-                        "player_id": 4569587,
-                        "player_position": "WR",
-                        "player_full_name": "Wan'Dale Robinson",
-                        "player_pro_team_id": 19,
-                        "player_score_projection": 13.2,
-                        "player_score_actual": 16.0
-                    },
-                    {
-                        "player_id": 3821683,
-                        "player_position": "K",
-                        "player_full_name": "Austin Seibert",
-                        "player_pro_team_id": 28,
-                        "player_score_projection": 8.4,
-                        "player_score_actual": 10.0
-                    },
-                    {
-                        "player_id": 4241401,
-                        "player_position": "RB",
-                        "player_full_name": "Trey Sermon",
-                        "player_pro_team_id": 11,
-                        "player_score_projection": 12.4,
-                        "player_score_actual": 18.3
-                    },
-                    {
-                        "player_id": 4572680,
-                        "player_position": "TE",
-                        "player_full_name": "Tucker Kraft",
-                        "player_pro_team_id": 9,
-                        "player_score_projection": 10.5,
-                        "player_score_actual": 24.8
-                    },
-                    {
-                        "player_id": 4360797,
-                        "player_position": "FLEX",
-                        "player_full_name": "Tutu Atwell",
-                        "player_pro_team_id": 14,
-                        "player_score_projection": 11.4,
-                        "player_score_actual": 12.5
-                    }
-                ],
-                "ir": [
-                    {
-                        "player_id": 4047646,
+                        "player_id": 14880,
                         "player_position": null,
-                        "player_full_name": "A.J. Brown",
-                        "player_pro_team_id": 21,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 4426515,
-                        "player_position": null,
-                        "player_full_name": "Puka Nacua",
-                        "player_pro_team_id": 14,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
-                    }
-                ],
-                "bench": [
-                    {
-                        "player_id": 3116385,
-                        "player_position": null,
-                        "player_full_name": "Joe Mixon",
-                        "player_pro_team_id": 34,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
-                    },
-                    {
-                        "player_id": 3051876,
-                        "player_position": null,
-                        "player_full_name": "Evan Engram",
-                        "player_pro_team_id": 30,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
-                    },
-                    {
-                        "player_id": 4361777,
-                        "player_position": null,
-                        "player_full_name": "Zamir White",
-                        "player_pro_team_id": 13,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
-                    },
-                    {
-                        "player_id": 15818,
-                        "player_position": null,
-                        "player_full_name": "Keenan Allen",
-                        "player_pro_team_id": 3,
-                        "player_score_projection": 9.3,
-                        "player_score_actual": 6.3
-                    },
-                    {
-                        "player_id": 4035538,
-                        "player_position": null,
-                        "player_full_name": "David Montgomery",
-                        "player_pro_team_id": 8,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 4682745,
-                        "player_position": null,
-                        "player_full_name": "Jaylen Wright",
-                        "player_pro_team_id": 15,
-                        "player_score_projection": 1.0,
-                        "player_score_actual": 8.6
-                    },
-                    {
-                        "player_id": 4362887,
-                        "player_position": null,
-                        "player_full_name": "Justin Fields",
-                        "player_pro_team_id": 23,
+                        "player_full_name": "Kirk Cousins",
+                        "player_pro_team_id": 1,
                         "player_score_projection": 20.1,
-                        "player_score_actual": 15.9
+                        "player_score_actual": 12.5
                     }
                 ]
             }
@@ -315,358 +307,218 @@
         {
             "matchup_id": 2,
             "away": {
-                "team_id": 11,
-                "team_score": 127.2,
+                "team_id": 5,
+                "team_score": 124.3,
                 "starters": [
                     {
-                        "player_id": 4430807,
-                        "player_position": "RB",
-                        "player_full_name": "Bijan Robinson",
-                        "player_pro_team_id": 1,
-                        "player_score_projection": 17.5,
-                        "player_score_actual": 10.7
-                    },
-                    {
-                        "player_id": 4035687,
-                        "player_position": "FLEX",
-                        "player_full_name": "Michael Pittman Jr.",
-                        "player_pro_team_id": 11,
-                        "player_score_projection": 13.7,
-                        "player_score_actual": 14.7
-                    },
-                    {
-                        "player_id": 4379399,
-                        "player_position": "RB",
-                        "player_full_name": "James Cook",
-                        "player_pro_team_id": 2,
-                        "player_score_projection": 15.5,
-                        "player_score_actual": 17.9
-                    },
-                    {
-                        "player_id": 3915416,
+                        "player_id": 4047646,
                         "player_position": "WR",
-                        "player_full_name": "DJ Moore",
-                        "player_pro_team_id": 3,
-                        "player_score_projection": 13.9,
-                        "player_score_actual": 27.5
+                        "player_full_name": "A.J. Brown",
+                        "player_pro_team_id": 21,
+                        "player_score_projection": 15.2,
+                        "player_score_actual": 23.6
                     },
                     {
-                        "player_id": 4385690,
-                        "player_position": "TE",
-                        "player_full_name": "Dalton Kincaid",
-                        "player_pro_team_id": 2,
-                        "player_score_projection": 10.4,
-                        "player_score_actual": 5.4
+                        "player_id": 4239996,
+                        "player_position": "RB",
+                        "player_full_name": "Travis Etienne Jr.",
+                        "player_pro_team_id": 30,
+                        "player_score_projection": 14.0,
+                        "player_score_actual": -0.1
                     },
                     {
-                        "player_id": 4432577,
-                        "player_position": "QB",
-                        "player_full_name": "C.J. Stroud",
+                        "player_id": 3116385,
+                        "player_position": "FLEX",
+                        "player_full_name": "Joe Mixon",
                         "player_pro_team_id": 34,
-                        "player_score_projection": 17.4,
-                        "player_score_actual": 15.9
+                        "player_score_projection": 16.9,
+                        "player_score_actual": 27.2
                     },
                     {
-                        "player_id": 4429615,
+                        "player_id": 4035538,
+                        "player_position": "RB",
+                        "player_full_name": "David Montgomery",
+                        "player_pro_team_id": 8,
+                        "player_score_projection": 14.1,
+                        "player_score_actual": 21.0
+                    },
+                    {
+                        "player_id": 4372019,
                         "player_position": "FLEX",
-                        "player_full_name": "Zay Flowers",
-                        "player_pro_team_id": 33,
-                        "player_score_projection": 13.6,
-                        "player_score_actual": 19.0
+                        "player_full_name": "Jerome Ford",
+                        "player_pro_team_id": 5,
+                        "player_score_projection": 11.2,
+                        "player_score_actual": 1.4
                     },
                     {
-                        "player_id": 4430878,
+                        "player_id": 4362887,
+                        "player_position": "QB",
+                        "player_full_name": "Justin Fields",
+                        "player_pro_team_id": 23,
+                        "player_score_projection": 19.1,
+                        "player_score_actual": 23.7
+                    },
+                    {
+                        "player_id": 4569587,
                         "player_position": "WR",
-                        "player_full_name": "Jaxon Smith-Njigba",
-                        "player_pro_team_id": 26,
-                        "player_score_projection": 12.6,
-                        "player_score_actual": 13.1
+                        "player_full_name": "Wan'Dale Robinson",
+                        "player_pro_team_id": 19,
+                        "player_score_projection": 14.4,
+                        "player_score_actual": 10.0
                     },
                     {
-                        "player_id": 4360234,
+                        "player_id": 3821683,
                         "player_position": "K",
-                        "player_full_name": "Evan McPherson",
-                        "player_pro_team_id": 4,
-                        "player_score_projection": 8.1,
-                        "player_score_actual": 3.0
+                        "player_full_name": "Austin Seibert",
+                        "player_pro_team_id": 28,
+                        "player_score_projection": 8.4,
+                        "player_score_actual": 14.0
+                    },
+                    {
+                        "player_id": 4572680,
+                        "player_position": "TE",
+                        "player_full_name": "Tucker Kraft",
+                        "player_pro_team_id": 9,
+                        "player_score_projection": 9.7,
+                        "player_score_actual": 3.5
                     }
                 ],
                 "ir": [
                     {
-                        "player_id": 3128720,
+                        "player_id": 4426515,
                         "player_position": null,
-                        "player_full_name": "Nick Chubb",
-                        "player_pro_team_id": 5,
+                        "player_full_name": "Puka Nacua",
+                        "player_pro_team_id": 14,
                         "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
+                        "player_score_actual": 0
                     }
                 ],
                 "bench": [
                     {
-                        "player_id": 4428557,
+                        "player_id": 3051876,
                         "player_position": null,
-                        "player_full_name": "Tyjae Spears",
-                        "player_pro_team_id": 10,
+                        "player_full_name": "Evan Engram",
+                        "player_pro_team_id": 30,
+                        "player_score_projection": 9.2,
+                        "player_score_actual": 18.2
+                    },
+                    {
+                        "player_id": 15818,
+                        "player_position": null,
+                        "player_full_name": "Keenan Allen",
+                        "player_pro_team_id": 3,
+                        "player_score_projection": 9.7,
+                        "player_score_actual": 21.1
+                    },
+                    {
+                        "player_id": 4682745,
+                        "player_position": null,
+                        "player_full_name": "Jaylen Wright",
+                        "player_pro_team_id": 15,
                         "player_score_projection": 0.0,
                         "player_score_actual": 0
                     },
                     {
-                        "player_id": 4241463,
+                        "player_id": 3052587,
                         "player_position": null,
-                        "player_full_name": "Jerry Jeudy",
-                        "player_pro_team_id": 5,
-                        "player_score_projection": 10.7,
-                        "player_score_actual": 2.6
+                        "player_full_name": "Baker Mayfield",
+                        "player_pro_team_id": 27,
+                        "player_score_projection": 17.4,
+                        "player_score_actual": 25.9
                     },
                     {
-                        "player_id": 4373626,
+                        "player_id": 3886598,
                         "player_position": null,
-                        "player_full_name": "Tyler Allgeier",
-                        "player_pro_team_id": 1,
-                        "player_score_projection": 7.5,
-                        "player_score_actual": 5.5
+                        "player_full_name": "Jauan Jennings",
+                        "player_pro_team_id": 25,
+                        "player_score_projection": 10.1,
+                        "player_score_actual": 5.7
                     },
                     {
-                        "player_id": 4361411,
+                        "player_id": 4241401,
                         "player_position": null,
-                        "player_full_name": "Pat Freiermuth",
-                        "player_pro_team_id": 23,
-                        "player_score_projection": 8.8,
-                        "player_score_actual": 9.2
+                        "player_full_name": "Trey Sermon",
+                        "player_pro_team_id": 11,
+                        "player_score_projection": 12.3,
+                        "player_score_actual": 2.9
                     },
                     {
-                        "player_id": 4361409,
+                        "player_id": 4360797,
                         "player_position": null,
-                        "player_full_name": "Jahan Dotson",
-                        "player_pro_team_id": 21,
+                        "player_full_name": "Tutu Atwell",
+                        "player_pro_team_id": 14,
                         "player_score_projection": 0.0,
                         "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 3128390,
-                        "player_position": null,
-                        "player_full_name": "Allen Lazard",
-                        "player_pro_team_id": 20,
-                        "player_score_projection": 7.8,
-                        "player_score_actual": 13.4
-                    },
-                    {
-                        "player_id": 4240021,
-                        "player_position": null,
-                        "player_full_name": "Cam Akers",
-                        "player_pro_team_id": 34,
-                        "player_score_projection": 12.1,
-                        "player_score_actual": 12.7
                     }
                 ]
             },
             "home": {
-                "team_id": 13,
-                "team_score": 133.8,
-                "starters": [
-                    {
-                        "player_id": 3043078,
-                        "player_position": "RB",
-                        "player_full_name": "Derrick Henry",
-                        "player_pro_team_id": 33,
-                        "player_score_projection": 18.8,
-                        "player_score_actual": 16.6
-                    },
-                    {
-                        "player_id": 4047365,
-                        "player_position": "RB",
-                        "player_full_name": "Josh Jacobs",
-                        "player_pro_team_id": 9,
-                        "player_score_projection": 15.5,
-                        "player_score_actual": 16.4
-                    },
-                    {
-                        "player_id": 15847,
-                        "player_position": "TE",
-                        "player_full_name": "Travis Kelce",
-                        "player_pro_team_id": 12,
-                        "player_score_projection": 12.1,
-                        "player_score_actual": 16.0
-                    },
-                    {
-                        "player_id": 4569173,
-                        "player_position": "FLEX",
-                        "player_full_name": "Rhamondre Stevenson",
-                        "player_pro_team_id": 17,
-                        "player_score_projection": 11.6,
-                        "player_score_actual": 19.2
-                    },
-                    {
-                        "player_id": 4431299,
-                        "player_position": "WR",
-                        "player_full_name": "Rome Odunze",
-                        "player_pro_team_id": 3,
-                        "player_score_projection": 8.6,
-                        "player_score_actual": 9.0
-                    },
-                    {
-                        "player_id": 4035676,
-                        "player_position": "FLEX",
-                        "player_full_name": "Zack Moss",
-                        "player_pro_team_id": 4,
-                        "player_score_projection": 12.8,
-                        "player_score_actual": 8.2
-                    },
-                    {
-                        "player_id": 4258173,
-                        "player_position": "WR",
-                        "player_full_name": "Nico Collins",
-                        "player_pro_team_id": 34,
-                        "player_score_projection": 17.9,
-                        "player_score_actual": 15.8
-                    },
-                    {
-                        "player_id": 4426348,
-                        "player_position": "QB",
-                        "player_full_name": "Jayden Daniels",
-                        "player_pro_team_id": 28,
-                        "player_score_projection": 23.1,
-                        "player_score_actual": 19.6
-                    },
-                    {
-                        "player_id": 3055899,
-                        "player_position": "K",
-                        "player_full_name": "Harrison Butker",
-                        "player_pro_team_id": 12,
-                        "player_score_projection": 8.0,
-                        "player_score_actual": 13.0
-                    }
-                ],
-                "ir": [],
-                "bench": [
-                    {
-                        "player_id": 4374302,
-                        "player_position": null,
-                        "player_full_name": "Amon-Ra St. Brown",
-                        "player_pro_team_id": 8,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 4040715,
-                        "player_position": null,
-                        "player_full_name": "Jalen Hurts",
-                        "player_pro_team_id": 21,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 3916148,
-                        "player_position": null,
-                        "player_full_name": "Tony Pollard",
-                        "player_pro_team_id": 10,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 4242355,
-                        "player_position": null,
-                        "player_full_name": "Jake Ferguson",
-                        "player_pro_team_id": 6,
-                        "player_score_projection": 11.9,
-                        "player_score_actual": 13.0
-                    },
-                    {
-                        "player_id": 4426388,
-                        "player_position": null,
-                        "player_full_name": "Jameson Williams",
-                        "player_pro_team_id": 8,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 4243537,
-                        "player_position": null,
-                        "player_full_name": "Gabe Davis",
-                        "player_pro_team_id": 30,
-                        "player_score_projection": 10.1,
-                        "player_score_actual": 4.8
-                    },
-                    {
-                        "player_id": 4360294,
-                        "player_position": null,
-                        "player_full_name": "Antonio Gibson",
-                        "player_pro_team_id": 17,
-                        "player_score_projection": 9.8,
-                        "player_score_actual": 6.6
-                    }
-                ]
-            }
-        },
-        {
-            "matchup_id": 3,
-            "away": {
                 "team_id": 1,
-                "team_score": 158.1,
+                "team_score": 142.5,
                 "starters": [
                     {
                         "player_id": 4241389,
                         "player_position": "WR",
                         "player_full_name": "CeeDee Lamb",
                         "player_pro_team_id": 6,
-                        "player_score_projection": 20.9,
-                        "player_score_actual": 11.4
+                        "player_score_projection": 19.1,
+                        "player_score_actual": 16.1
                     },
                     {
                         "player_id": 4569618,
                         "player_position": "WR",
                         "player_full_name": "Garrett Wilson",
                         "player_pro_team_id": 20,
-                        "player_score_projection": 13.7,
-                        "player_score_actual": 29.1
+                        "player_score_projection": 16.6,
+                        "player_score_actual": 24.7
                     },
                     {
                         "player_id": 4567048,
                         "player_position": "RB",
                         "player_full_name": "Kenneth Walker III",
                         "player_pro_team_id": 26,
-                        "player_score_projection": 17.4,
-                        "player_score_actual": 14.6
+                        "player_score_projection": 17.5,
+                        "player_score_actual": 20.9
                     },
                     {
                         "player_id": 3916387,
                         "player_position": "QB",
                         "player_full_name": "Lamar Jackson",
                         "player_pro_team_id": 33,
-                        "player_score_projection": 21.7,
-                        "player_score_actual": 33.3
+                        "player_score_projection": 22.3,
+                        "player_score_actual": 18.8
                     },
                     {
                         "player_id": 3045147,
                         "player_position": "RB",
                         "player_full_name": "James Conner",
                         "player_pro_team_id": 22,
-                        "player_score_projection": 13.1,
-                        "player_score_actual": 14.0
+                        "player_score_projection": 14.0,
+                        "player_score_actual": 6.6
                     },
                     {
                         "player_id": 3040151,
                         "player_position": "TE",
                         "player_full_name": "George Kittle",
                         "player_pro_team_id": 25,
-                        "player_score_projection": 12.2,
-                        "player_score_actual": 20.4
+                        "player_score_projection": 14.7,
+                        "player_score_actual": 22.8
+                    },
+                    {
+                        "player_id": 4612826,
+                        "player_position": "FLEX",
+                        "player_full_name": "Ladd McConkey",
+                        "player_pro_team_id": 24,
+                        "player_score_projection": 11.0,
+                        "player_score_actual": 8.3
                     },
                     {
                         "player_id": 4241416,
                         "player_position": "FLEX",
                         "player_full_name": "Chuba Hubbard",
                         "player_pro_team_id": 29,
-                        "player_score_projection": 14.8,
-                        "player_score_actual": 17.5
-                    },
-                    {
-                        "player_id": 4430034,
-                        "player_position": "FLEX",
-                        "player_full_name": "Xavier Legette",
-                        "player_pro_team_id": 29,
-                        "player_score_projection": 10.8,
-                        "player_score_actual": 1.8
+                        "player_score_projection": 15.7,
+                        "player_score_actual": 15.3
                     },
                     {
                         "player_id": 3150744,
@@ -674,10 +526,18 @@
                         "player_full_name": "Chase McLaughlin",
                         "player_pro_team_id": 27,
                         "player_score_projection": 8.2,
-                        "player_score_actual": 16.0
+                        "player_score_actual": 9.0
                     }
                 ],
                 "ir": [
+                    {
+                        "player_id": 4040761,
+                        "player_position": null,
+                        "player_full_name": "Devin Singletary",
+                        "player_pro_team_id": 19,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
+                    },
                     {
                         "player_id": 16460,
                         "player_position": null,
@@ -693,14 +553,6 @@
                         "player_position": null,
                         "player_full_name": "Jaylen Waddle",
                         "player_pro_team_id": 15,
-                        "player_score_projection": 9.1,
-                        "player_score_actual": 8.6
-                    },
-                    {
-                        "player_id": 4612826,
-                        "player_position": null,
-                        "player_full_name": "Ladd McConkey",
-                        "player_pro_team_id": 24,
                         "player_score_projection": 0.0,
                         "player_score_actual": 0
                     },
@@ -709,275 +561,275 @@
                         "player_position": null,
                         "player_full_name": "Ezekiel Elliott",
                         "player_pro_team_id": 6,
-                        "player_score_projection": 6.2,
+                        "player_score_projection": 5.7,
                         "player_score_actual": 1.7
-                    },
-                    {
-                        "player_id": 4040761,
-                        "player_position": null,
-                        "player_full_name": "Devin Singletary",
-                        "player_pro_team_id": 19,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
                     },
                     {
                         "player_id": 2577327,
                         "player_position": null,
                         "player_full_name": "Tyler Lockett",
                         "player_pro_team_id": 26,
-                        "player_score_projection": 10.2,
-                        "player_score_actual": 11.5
+                        "player_score_projection": 10.9,
+                        "player_score_actual": 16.5
                     },
                     {
                         "player_id": 4242431,
                         "player_position": null,
                         "player_full_name": "Ty Chandler",
                         "player_pro_team_id": 16,
-                        "player_score_projection": 5.4,
-                        "player_score_actual": 5.9
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
                     },
                     {
                         "player_id": 3116164,
                         "player_position": null,
                         "player_full_name": "Mike Gesicki",
                         "player_pro_team_id": 4,
-                        "player_score_projection": 7.2,
-                        "player_score_actual": 5.1
+                        "player_score_projection": 6.2,
+                        "player_score_actual": 0.0
+                    },
+                    {
+                        "player_id": 4430034,
+                        "player_position": null,
+                        "player_full_name": "Xavier Legette",
+                        "player_pro_team_id": 29,
+                        "player_score_projection": 10.8,
+                        "player_score_actual": 11.3
+                    },
+                    {
+                        "player_id": 2983509,
+                        "player_position": null,
+                        "player_full_name": "Dare Ogunbowale",
+                        "player_pro_team_id": 34,
+                        "player_score_projection": 3.8,
+                        "player_score_actual": 0.8
                     }
                 ]
-            },
-            "home": {
-                "team_id": 2,
-                "team_score": 131.3,
+            }
+        },
+        {
+            "matchup_id": 3,
+            "away": {
+                "team_id": 13,
+                "team_score": 109.1,
                 "starters": [
                     {
-                        "player_id": 4362628,
+                        "player_id": 4374302,
                         "player_position": "WR",
-                        "player_full_name": "Ja'Marr Chase",
-                        "player_pro_team_id": 4,
-                        "player_score_projection": 16.2,
-                        "player_score_actual": 41.3
+                        "player_full_name": "Amon-Ra St. Brown",
+                        "player_pro_team_id": 8,
+                        "player_score_projection": 17.0,
+                        "player_score_actual": 13.7
                     },
                     {
-                        "player_id": 4432708,
-                        "player_position": "WR",
-                        "player_full_name": "Marvin Harrison Jr.",
-                        "player_pro_team_id": 22,
-                        "player_score_projection": 16.0,
-                        "player_score_actual": 5.6
-                    },
-                    {
-                        "player_id": 4429160,
+                        "player_id": 3043078,
                         "player_position": "RB",
-                        "player_full_name": "De'Von Achane",
-                        "player_pro_team_id": 15,
-                        "player_score_projection": 15.8,
-                        "player_score_actual": 2.7
-                    },
-                    {
-                        "player_id": 3932905,
-                        "player_position": "FLEX",
-                        "player_full_name": "Diontae Johnson",
-                        "player_pro_team_id": 29,
-                        "player_score_projection": 15.3,
-                        "player_score_actual": 5.9
-                    },
-                    {
-                        "player_id": 4241474,
-                        "player_position": "RB",
-                        "player_full_name": "Brian Robinson Jr.",
-                        "player_pro_team_id": 28,
-                        "player_score_projection": 15.7,
-                        "player_score_actual": 13.8
-                    },
-                    {
-                        "player_id": 3917315,
-                        "player_position": "QB",
-                        "player_full_name": "Kyler Murray",
-                        "player_pro_team_id": 22,
-                        "player_score_projection": 17.3,
-                        "player_score_actual": 24.1
-                    },
-                    {
-                        "player_id": 4429205,
-                        "player_position": "FLEX",
-                        "player_full_name": "Jordan Addison",
-                        "player_pro_team_id": 16,
-                        "player_score_projection": 10.7,
-                        "player_score_actual": 6.6
-                    },
-                    {
-                        "player_id": 3049899,
-                        "player_position": "K",
-                        "player_full_name": "Younghoe Koo",
-                        "player_pro_team_id": 1,
-                        "player_score_projection": 8.1,
-                        "player_score_actual": 15.0
-                    },
-                    {
-                        "player_id": 4361050,
-                        "player_position": "TE",
-                        "player_full_name": "Isaiah Likely",
+                        "player_full_name": "Derrick Henry",
                         "player_pro_team_id": 33,
-                        "player_score_projection": 6.3,
-                        "player_score_actual": 16.3
+                        "player_score_projection": 18.2,
+                        "player_score_actual": 25.2
+                    },
+                    {
+                        "player_id": 4047365,
+                        "player_position": "RB",
+                        "player_full_name": "Josh Jacobs",
+                        "player_pro_team_id": 9,
+                        "player_score_projection": 14.8,
+                        "player_score_actual": 12.0
+                    },
+                    {
+                        "player_id": 4431299,
+                        "player_position": "WR",
+                        "player_full_name": "Rome Odunze",
+                        "player_pro_team_id": 3,
+                        "player_score_projection": 10.1,
+                        "player_score_actual": 6.0
+                    },
+                    {
+                        "player_id": 3916148,
+                        "player_position": "FLEX",
+                        "player_full_name": "Tony Pollard",
+                        "player_pro_team_id": 10,
+                        "player_score_projection": 16.2,
+                        "player_score_actual": 17.8
+                    },
+                    {
+                        "player_id": 4242355,
+                        "player_position": "TE",
+                        "player_full_name": "Jake Ferguson",
+                        "player_pro_team_id": 6,
+                        "player_score_projection": 11.6,
+                        "player_score_actual": 4.1
+                    },
+                    {
+                        "player_id": 4035676,
+                        "player_position": "FLEX",
+                        "player_full_name": "Zack Moss",
+                        "player_pro_team_id": 4,
+                        "player_score_projection": 13.2,
+                        "player_score_actual": 0.5
+                    },
+                    {
+                        "player_id": 4426348,
+                        "player_position": "QB",
+                        "player_full_name": "Jayden Daniels",
+                        "player_pro_team_id": 28,
+                        "player_score_projection": 24.3,
+                        "player_score_actual": 20.8
+                    },
+                    {
+                        "player_id": 3050478,
+                        "player_position": "K",
+                        "player_full_name": "Jake Elliott",
+                        "player_pro_team_id": 21,
+                        "player_score_projection": 8.1,
+                        "player_score_actual": 9.0
                     }
                 ],
                 "ir": [
                     {
-                        "player_id": 4361529,
+                        "player_id": 4258173,
                         "player_position": null,
-                        "player_full_name": "Isiah Pacheco",
-                        "player_pro_team_id": 12,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
-                    },
-                    {
-                        "player_id": 4036133,
-                        "player_position": null,
-                        "player_full_name": "T.J. Hockenson",
-                        "player_pro_team_id": 16,
+                        "player_full_name": "Nico Collins",
+                        "player_pro_team_id": 34,
                         "player_score_projection": 0.0,
                         "player_score_actual": 0.0
                     }
                 ],
                 "bench": [
                     {
-                        "player_id": 2977187,
+                        "player_id": 15847,
                         "player_position": null,
-                        "player_full_name": "Cooper Kupp",
-                        "player_pro_team_id": 14,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
-                    },
-                    {
-                        "player_id": 3925357,
-                        "player_position": null,
-                        "player_full_name": "Calvin Ridley",
-                        "player_pro_team_id": 10,
+                        "player_full_name": "Travis Kelce",
+                        "player_pro_team_id": 12,
                         "player_score_projection": 0.0,
                         "player_score_actual": 0
                     },
                     {
-                        "player_id": 4429275,
+                        "player_id": 4040715,
                         "player_position": null,
-                        "player_full_name": "Trey Benson",
-                        "player_pro_team_id": 22,
-                        "player_score_projection": 3.8,
-                        "player_score_actual": 0.0
+                        "player_full_name": "Jalen Hurts",
+                        "player_pro_team_id": 21,
+                        "player_score_projection": 19.9,
+                        "player_score_actual": 21.7
                     },
                     {
-                        "player_id": 4373678,
+                        "player_id": 4569173,
                         "player_position": null,
-                        "player_full_name": "Khalil Shakir",
-                        "player_pro_team_id": 2,
+                        "player_full_name": "Rhamondre Stevenson",
+                        "player_pro_team_id": 17,
                         "player_score_projection": 0.0,
                         "player_score_actual": 0.0
                     },
                     {
-                        "player_id": 3116389,
+                        "player_id": 4426388,
                         "player_position": null,
-                        "player_full_name": "Samaje Perine",
+                        "player_full_name": "Jameson Williams",
+                        "player_pro_team_id": 8,
+                        "player_score_projection": 11.0,
+                        "player_score_actual": 17.7
+                    },
+                    {
+                        "player_id": 3055899,
+                        "player_position": null,
+                        "player_full_name": "Harrison Butker",
                         "player_pro_team_id": 12,
-                        "player_score_projection": 5.8,
-                        "player_score_actual": 3.4
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
                     },
                     {
-                        "player_id": 4362238,
+                        "player_id": 4360294,
                         "player_position": null,
-                        "player_full_name": "Chase Brown",
-                        "player_pro_team_id": 4,
-                        "player_score_projection": 9.1,
-                        "player_score_actual": 16.4
+                        "player_full_name": "Antonio Gibson",
+                        "player_pro_team_id": 17,
+                        "player_score_projection": 11.9,
+                        "player_score_actual": 7.3
                     },
                     {
-                        "player_id": 4569382,
+                        "player_id": 4428718,
                         "player_position": null,
-                        "player_full_name": "Jordan Whittington",
-                        "player_pro_team_id": 14,
-                        "player_score_projection": 10.9,
-                        "player_score_actual": 15.9
+                        "player_full_name": "Tre Tucker",
+                        "player_pro_team_id": 13,
+                        "player_score_projection": 11.5,
+                        "player_score_actual": 0.0
                     }
                 ]
-            }
-        },
-        {
-            "matchup_id": 4,
-            "away": {
+            },
+            "home": {
                 "team_id": 7,
-                "team_score": 125.9,
+                "team_score": 135.6,
                 "starters": [
-                    {
-                        "player_id": 3116406,
-                        "player_position": "WR",
-                        "player_full_name": "Tyreek Hill",
-                        "player_pro_team_id": 15,
-                        "player_score_projection": 13.1,
-                        "player_score_actual": 12.9
-                    },
                     {
                         "player_id": 4426502,
                         "player_position": "WR",
                         "player_full_name": "Drake London",
                         "player_pro_team_id": 1,
-                        "player_score_projection": 15.3,
-                        "player_score_actual": 33.4
+                        "player_score_projection": 19.6,
+                        "player_score_actual": 19.4
                     },
                     {
                         "player_id": 3918298,
                         "player_position": "QB",
                         "player_full_name": "Josh Allen",
                         "player_pro_team_id": 2,
-                        "player_score_projection": 20.3,
-                        "player_score_actual": 14.6
-                    },
-                    {
-                        "player_id": 3042519,
-                        "player_position": "RB",
-                        "player_full_name": "Aaron Jones",
-                        "player_pro_team_id": 16,
-                        "player_score_projection": 17.7,
-                        "player_score_actual": 6.3
+                        "player_score_projection": 18.0,
+                        "player_score_actual": 24.4
                     },
                     {
                         "player_id": 4426354,
                         "player_position": "FLEX",
                         "player_full_name": "George Pickens",
                         "player_pro_team_id": 23,
-                        "player_score_projection": 14.3,
-                        "player_score_actual": 5.6
+                        "player_score_projection": 13.3,
+                        "player_score_actual": 8.3
                     },
                     {
                         "player_id": 4241457,
                         "player_position": "RB",
                         "player_full_name": "Najee Harris",
                         "player_pro_team_id": 23,
-                        "player_score_projection": 15.4,
-                        "player_score_actual": 9.7
+                        "player_score_projection": 13.3,
+                        "player_score_actual": 20.2
                     },
                     {
                         "player_id": 4362249,
                         "player_position": "FLEX",
                         "player_full_name": "Jayden Reed",
                         "player_pro_team_id": 9,
-                        "player_score_projection": 15.4,
-                        "player_score_actual": 13.7
+                        "player_score_projection": 14.8,
+                        "player_score_actual": 14.8
                     },
                     {
                         "player_id": 4432665,
                         "player_position": "TE",
                         "player_full_name": "Brock Bowers",
                         "player_pro_team_id": 13,
-                        "player_score_projection": 8.7,
-                        "player_score_actual": 23.7
+                        "player_score_projection": 12.9,
+                        "player_score_actual": 16.1
+                    },
+                    {
+                        "player_id": 4360761,
+                        "player_position": "WR",
+                        "player_full_name": "Michael Wilson",
+                        "player_pro_team_id": 22,
+                        "player_score_projection": 10.2,
+                        "player_score_actual": 10.1
                     },
                     {
                         "player_id": 17372,
                         "player_position": "K",
                         "player_full_name": "Chris Boswell",
                         "player_pro_team_id": 23,
-                        "player_score_projection": 8.3,
-                        "player_score_actual": 6.0
+                        "player_score_projection": 8.2,
+                        "player_score_actual": 17.0
+                    },
+                    {
+                        "player_id": 4426386,
+                        "player_position": "RB",
+                        "player_full_name": "Roschon Johnson",
+                        "player_pro_team_id": 3,
+                        "player_score_projection": 7.6,
+                        "player_score_actual": 5.3
                     }
                 ],
                 "ir": [
@@ -994,26 +846,42 @@
                         "player_position": null,
                         "player_full_name": "Austin Ekeler",
                         "player_pro_team_id": 28,
-                        "player_score_projection": 10.5,
-                        "player_score_actual": 11.7
+                        "player_score_projection": 15.8,
+                        "player_score_actual": 10.8
                     }
                 ],
                 "bench": [
+                    {
+                        "player_id": 3116406,
+                        "player_position": null,
+                        "player_full_name": "Tyreek Hill",
+                        "player_pro_team_id": 15,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 3042519,
+                        "player_position": null,
+                        "player_full_name": "Aaron Jones",
+                        "player_pro_team_id": 16,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
                     {
                         "player_id": 15795,
                         "player_position": null,
                         "player_full_name": "DeAndre Hopkins",
                         "player_pro_team_id": 10,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
+                        "player_score_projection": 10.5,
+                        "player_score_actual": 9.4
                     },
                     {
                         "player_id": 4426385,
                         "player_position": null,
                         "player_full_name": "Zach Charbonnet",
                         "player_pro_team_id": 26,
-                        "player_score_projection": 8.5,
-                        "player_score_actual": 6.0
+                        "player_score_projection": 8.3,
+                        "player_score_actual": 4.5
                     },
                     {
                         "player_id": 4429096,
@@ -1021,15 +889,7 @@
                         "player_full_name": "Blake Corum",
                         "player_pro_team_id": 14,
                         "player_score_projection": 0.0,
-                        "player_score_actual": 4.3
-                    },
-                    {
-                        "player_id": 4360761,
-                        "player_position": null,
-                        "player_full_name": "Michael Wilson",
-                        "player_pro_team_id": 22,
-                        "player_score_projection": 8.4,
-                        "player_score_actual": 12.8
+                        "player_score_actual": 0
                     },
                     {
                         "player_id": 2980453,
@@ -1037,169 +897,178 @@
                         "player_full_name": "Jamaal Williams",
                         "player_pro_team_id": 18,
                         "player_score_projection": 6.2,
-                        "player_score_actual": 0.9
-                    },
-                    {
-                        "player_id": 4426386,
-                        "player_position": null,
-                        "player_full_name": "Roschon Johnson",
-                        "player_pro_team_id": 3,
-                        "player_score_projection": 7.0,
-                        "player_score_actual": 14.5
+                        "player_score_actual": 0.7
                     },
                     {
                         "player_id": 4688813,
                         "player_position": null,
                         "player_full_name": "Josh Downs",
                         "player_pro_team_id": 11,
-                        "player_score_projection": 11.3,
-                        "player_score_actual": 15.9
-                    }
-                ]
-            },
-            "home": {
-                "team_id": 3,
-                "team_score": 150.3,
-                "starters": [
-                    {
-                        "player_id": 4262921,
-                        "player_position": "WR",
-                        "player_full_name": "Justin Jefferson",
-                        "player_pro_team_id": 16,
-                        "player_score_projection": 16.9,
-                        "player_score_actual": 15.2
-                    },
-                    {
-                        "player_id": 4430737,
-                        "player_position": "RB",
-                        "player_full_name": "Kyren Williams",
-                        "player_pro_team_id": 14,
-                        "player_score_projection": 20.5,
-                        "player_score_actual": 15.5
-                    },
-                    {
-                        "player_id": 3054850,
-                        "player_position": "RB",
-                        "player_full_name": "Alvin Kamara",
-                        "player_pro_team_id": 18,
-                        "player_score_projection": 19.6,
-                        "player_score_actual": 12.6
-                    },
-                    {
-                        "player_id": 4239993,
-                        "player_position": "WR",
-                        "player_full_name": "Tee Higgins",
-                        "player_pro_team_id": 4,
                         "player_score_projection": 13.0,
-                        "player_score_actual": 29.3
-                    },
-                    {
-                        "player_id": 4259545,
-                        "player_position": "FLEX",
-                        "player_full_name": "D'Andre Swift",
-                        "player_pro_team_id": 3,
-                        "player_score_projection": 15.4,
-                        "player_score_actual": 20.0
-                    },
-                    {
-                        "player_id": 4036378,
-                        "player_position": "QB",
-                        "player_full_name": "Jordan Love",
-                        "player_pro_team_id": 9,
-                        "player_score_projection": 19.9,
-                        "player_score_actual": 15.8
-                    },
-                    {
-                        "player_id": 4040655,
-                        "player_position": "FLEX",
-                        "player_full_name": "Darnell Mooney",
-                        "player_pro_team_id": 1,
-                        "player_score_projection": 12.4,
-                        "player_score_actual": 31.5
-                    },
-                    {
-                        "player_id": 4372066,
-                        "player_position": "K",
-                        "player_full_name": "Jake Moody",
-                        "player_pro_team_id": 25,
-                        "player_score_projection": 8.4,
-                        "player_score_actual": 8.0
-                    },
-                    {
-                        "player_id": 3123076,
-                        "player_position": "TE",
-                        "player_full_name": "David Njoku",
-                        "player_pro_team_id": 5,
-                        "player_score_projection": 8.3,
-                        "player_score_actual": 2.4
-                    }
-                ],
-                "ir": [],
-                "bench": [
-                    {
-                        "player_id": 4241478,
-                        "player_position": null,
-                        "player_full_name": "DeVonta Smith",
-                        "player_pro_team_id": 21,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 3895856,
-                        "player_position": null,
-                        "player_full_name": "Christian Kirk",
-                        "player_pro_team_id": 30,
-                        "player_score_projection": 12.6,
-                        "player_score_actual": 12.8
-                    },
-                    {
-                        "player_id": 4361579,
-                        "player_position": null,
-                        "player_full_name": "Javonte Williams",
-                        "player_pro_team_id": 7,
-                        "player_score_projection": 12.7,
-                        "player_score_actual": 16.1
-                    },
-                    {
-                        "player_id": 3128429,
-                        "player_position": null,
-                        "player_full_name": "Courtland Sutton",
-                        "player_pro_team_id": 7,
-                        "player_score_projection": 11.4,
-                        "player_score_actual": 5.2
-                    },
-                    {
-                        "player_id": 3121023,
-                        "player_position": null,
-                        "player_full_name": "Dallas Goedert",
-                        "player_pro_team_id": 21,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 4241985,
-                        "player_position": null,
-                        "player_full_name": "J.K. Dobbins",
-                        "player_pro_team_id": 24,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 16757,
-                        "player_position": null,
-                        "player_full_name": "Derek Carr",
-                        "player_pro_team_id": 18,
-                        "player_score_projection": 12.6,
-                        "player_score_actual": 12.6
+                        "player_score_actual": 19.5
                     }
                 ]
             }
         },
         {
-            "matchup_id": 5,
+            "matchup_id": 4,
             "away": {
+                "team_id": 2,
+                "team_score": 98.5,
+                "starters": [
+                    {
+                        "player_id": 4362628,
+                        "player_position": "WR",
+                        "player_full_name": "Ja'Marr Chase",
+                        "player_pro_team_id": 4,
+                        "player_score_projection": 18.4,
+                        "player_score_actual": 12.2
+                    },
+                    {
+                        "player_id": 4432708,
+                        "player_position": "WR",
+                        "player_full_name": "Marvin Harrison Jr.",
+                        "player_pro_team_id": 22,
+                        "player_score_projection": 14.5,
+                        "player_score_actual": 0.0
+                    },
+                    {
+                        "player_id": 3925357,
+                        "player_position": "FLEX",
+                        "player_full_name": "Calvin Ridley",
+                        "player_pro_team_id": 10,
+                        "player_score_projection": 11.6,
+                        "player_score_actual": 0.9
+                    },
+                    {
+                        "player_id": 3932905,
+                        "player_position": "FLEX",
+                        "player_full_name": "Diontae Johnson",
+                        "player_pro_team_id": 29,
+                        "player_score_projection": 15.1,
+                        "player_score_actual": 19.8
+                    },
+                    {
+                        "player_id": 3917315,
+                        "player_position": "QB",
+                        "player_full_name": "Kyler Murray",
+                        "player_pro_team_id": 22,
+                        "player_score_projection": 17.6,
+                        "player_score_actual": 11.8
+                    },
+                    {
+                        "player_id": 3049899,
+                        "player_position": "K",
+                        "player_full_name": "Younghoe Koo",
+                        "player_pro_team_id": 1,
+                        "player_score_projection": 8.5,
+                        "player_score_actual": 12.0
+                    },
+                    {
+                        "player_id": 4361050,
+                        "player_position": "TE",
+                        "player_full_name": "Isaiah Likely",
+                        "player_pro_team_id": 33,
+                        "player_score_projection": 6.1,
+                        "player_score_actual": 4.7
+                    },
+                    {
+                        "player_id": 4362238,
+                        "player_position": "RB",
+                        "player_full_name": "Chase Brown",
+                        "player_pro_team_id": 4,
+                        "player_score_projection": 11.3,
+                        "player_score_actual": 14.4
+                    },
+                    {
+                        "player_id": 4360516,
+                        "player_position": "RB",
+                        "player_full_name": "Tyrone Tracy Jr.",
+                        "player_pro_team_id": 19,
+                        "player_score_projection": 12.3,
+                        "player_score_actual": 22.7
+                    }
+                ],
+                "ir": [
+                    {
+                        "player_id": 4361529,
+                        "player_position": null,
+                        "player_full_name": "Isiah Pacheco",
+                        "player_pro_team_id": 12,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 4036133,
+                        "player_position": null,
+                        "player_full_name": "T.J. Hockenson",
+                        "player_pro_team_id": 16,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    }
+                ],
+                "bench": [
+                    {
+                        "player_id": 4429160,
+                        "player_position": null,
+                        "player_full_name": "De'Von Achane",
+                        "player_pro_team_id": 15,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 2977187,
+                        "player_position": null,
+                        "player_full_name": "Cooper Kupp",
+                        "player_pro_team_id": 14,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 4241474,
+                        "player_position": null,
+                        "player_full_name": "Brian Robinson Jr.",
+                        "player_pro_team_id": 28,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
+                    },
+                    {
+                        "player_id": 4429205,
+                        "player_position": null,
+                        "player_full_name": "Jordan Addison",
+                        "player_pro_team_id": 16,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 4373678,
+                        "player_position": null,
+                        "player_full_name": "Khalil Shakir",
+                        "player_pro_team_id": 2,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 3.9
+                    },
+                    {
+                        "player_id": 3116389,
+                        "player_position": null,
+                        "player_full_name": "Samaje Perine",
+                        "player_pro_team_id": 12,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 4569382,
+                        "player_position": null,
+                        "player_full_name": "Jordan Whittington",
+                        "player_pro_team_id": 14,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    }
+                ]
+            },
+            "home": {
                 "team_id": 4,
-                "team_score": 86.5,
+                "team_score": 151.6,
                 "starters": [
                     {
                         "player_id": 4427366,
@@ -1207,71 +1076,71 @@
                         "player_full_name": "Breece Hall",
                         "player_pro_team_id": 20,
                         "player_score_projection": 16.7,
-                        "player_score_actual": 6.7
+                        "player_score_actual": 21.9
                     },
                     {
                         "player_id": 4047650,
-                        "player_position": "FLEX",
+                        "player_position": "WR",
                         "player_full_name": "DK Metcalf",
                         "player_pro_team_id": 26,
-                        "player_score_projection": 15.1,
-                        "player_score_actual": 7.5
+                        "player_score_projection": 15.0,
+                        "player_score_actual": 7.8
                     },
                     {
                         "player_id": 3126486,
                         "player_position": "WR",
                         "player_full_name": "Deebo Samuel Sr.",
                         "player_pro_team_id": 25,
-                        "player_score_projection": 16.6,
-                        "player_score_actual": 3.0
+                        "player_score_projection": 16.3,
+                        "player_score_actual": 20.7
                     },
                     {
                         "player_id": 4361307,
                         "player_position": "TE",
                         "player_full_name": "Trey McBride",
                         "player_pro_team_id": 22,
-                        "player_score_projection": 12.9,
-                        "player_score_actual": 11.3
+                        "player_score_projection": 12.5,
+                        "player_score_actual": 17.6
                     },
                     {
                         "player_id": 3121422,
-                        "player_position": "WR",
+                        "player_position": "FLEX",
                         "player_full_name": "Terry McLaurin",
                         "player_pro_team_id": 28,
+                        "player_score_projection": 16.7,
+                        "player_score_actual": 23.3
+                    },
+                    {
+                        "player_id": 4432773,
+                        "player_position": "FLEX",
+                        "player_full_name": "Brian Thomas Jr.",
+                        "player_pro_team_id": 30,
                         "player_score_projection": 13.5,
-                        "player_score_actual": 13.4
+                        "player_score_actual": 5.7
+                    },
+                    {
+                        "player_id": 4596448,
+                        "player_position": "RB",
+                        "player_full_name": "Bucky Irving",
+                        "player_pro_team_id": 27,
+                        "player_score_projection": 13.8,
+                        "player_score_actual": 18.5
                     },
                     {
                         "player_id": 3953687,
                         "player_position": "K",
                         "player_full_name": "Brandon Aubrey",
                         "player_pro_team_id": 6,
-                        "player_score_projection": 8.1,
-                        "player_score_actual": 9.0
+                        "player_score_projection": 8.3,
+                        "player_score_actual": 12.0
                     },
                     {
                         "player_id": 4361741,
                         "player_position": "QB",
                         "player_full_name": "Brock Purdy",
                         "player_pro_team_id": 25,
-                        "player_score_projection": 19.1,
-                        "player_score_actual": 12.9
-                    },
-                    {
-                        "player_id": 4428850,
-                        "player_position": "FLEX",
-                        "player_full_name": "Dontayvion Wicks",
-                        "player_pro_team_id": 9,
-                        "player_score_projection": 12.2,
-                        "player_score_actual": 4.0
-                    },
-                    {
-                        "player_id": 3059915,
-                        "player_position": "RB",
-                        "player_full_name": "Kareem Hunt",
-                        "player_pro_team_id": 12,
-                        "player_score_projection": 11.8,
-                        "player_score_actual": 18.7
+                        "player_score_projection": 19.2,
+                        "player_score_actual": 24.1
                     }
                 ],
                 "ir": [
@@ -1281,7 +1150,7 @@
                         "player_full_name": "Rashee Rice",
                         "player_pro_team_id": 12,
                         "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
+                        "player_score_actual": 0
                     },
                     {
                         "player_id": 4678008,
@@ -1306,8 +1175,8 @@
                         "player_position": null,
                         "player_full_name": "Patrick Mahomes",
                         "player_pro_team_id": 12,
-                        "player_score_projection": 15.6,
-                        "player_score_actual": 13.4
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
                     },
                     {
                         "player_id": 4242335,
@@ -1318,131 +1187,272 @@
                         "player_score_actual": 0.0
                     },
                     {
-                        "player_id": 4432773,
-                        "player_position": null,
-                        "player_full_name": "Brian Thomas Jr.",
-                        "player_pro_team_id": 30,
-                        "player_score_projection": 12.9,
-                        "player_score_actual": 23.2
-                    },
-                    {
-                        "player_id": 3045138,
-                        "player_position": null,
-                        "player_full_name": "Mike Williams",
-                        "player_pro_team_id": 20,
-                        "player_score_projection": 7.0,
-                        "player_score_actual": 4.5
-                    },
-                    {
-                        "player_id": 4596448,
-                        "player_position": null,
-                        "player_full_name": "Bucky Irving",
-                        "player_pro_team_id": 27,
-                        "player_score_projection": 9.8,
-                        "player_score_actual": 5.6
-                    },
-                    {
                         "player_id": 4685247,
                         "player_position": null,
                         "player_full_name": "Braelon Allen",
                         "player_pro_team_id": 20,
                         "player_score_projection": 8.0,
-                        "player_score_actual": 3.8
+                        "player_score_actual": 0.8
+                    },
+                    {
+                        "player_id": 4428850,
+                        "player_position": null,
+                        "player_full_name": "Dontayvion Wicks",
+                        "player_pro_team_id": 9,
+                        "player_score_projection": 8.7,
+                        "player_score_actual": 1.9
+                    },
+                    {
+                        "player_id": 3059915,
+                        "player_position": null,
+                        "player_full_name": "Kareem Hunt",
+                        "player_pro_team_id": 12,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 4429013,
+                        "player_position": null,
+                        "player_full_name": "Tank Bigsby",
+                        "player_pro_team_id": 30,
+                        "player_score_projection": 6.3,
+                        "player_score_actual": 2.4
+                    }
+                ]
+            }
+        },
+        {
+            "matchup_id": 5,
+            "away": {
+                "team_id": 3,
+                "team_score": 123.9,
+                "starters": [
+                    {
+                        "player_id": 3054850,
+                        "player_position": "RB",
+                        "player_full_name": "Alvin Kamara",
+                        "player_pro_team_id": 18,
+                        "player_score_projection": 19.3,
+                        "player_score_actual": 17.4
+                    },
+                    {
+                        "player_id": 4241478,
+                        "player_position": "WR",
+                        "player_full_name": "DeVonta Smith",
+                        "player_pro_team_id": 21,
+                        "player_score_projection": 13.3,
+                        "player_score_actual": 15.4
+                    },
+                    {
+                        "player_id": 4239993,
+                        "player_position": "WR",
+                        "player_full_name": "Tee Higgins",
+                        "player_pro_team_id": 4,
+                        "player_score_projection": 14.7,
+                        "player_score_actual": 14.7
+                    },
+                    {
+                        "player_id": 4259545,
+                        "player_position": "FLEX",
+                        "player_full_name": "D'Andre Swift",
+                        "player_pro_team_id": 3,
+                        "player_score_projection": 17.0,
+                        "player_score_actual": 21.9
+                    },
+                    {
+                        "player_id": 4036378,
+                        "player_position": "QB",
+                        "player_full_name": "Jordan Love",
+                        "player_pro_team_id": 9,
+                        "player_score_projection": 18.0,
+                        "player_score_actual": 25.5
+                    },
+                    {
+                        "player_id": 3121023,
+                        "player_position": "TE",
+                        "player_full_name": "Dallas Goedert",
+                        "player_pro_team_id": 21,
+                        "player_score_projection": 9.5,
+                        "player_score_actual": 0.0
+                    },
+                    {
+                        "player_id": 4241985,
+                        "player_position": "RB",
+                        "player_full_name": "J.K. Dobbins",
+                        "player_pro_team_id": 24,
+                        "player_score_projection": 13.5,
+                        "player_score_actual": 18.2
+                    },
+                    {
+                        "player_id": 4040655,
+                        "player_position": "FLEX",
+                        "player_full_name": "Darnell Mooney",
+                        "player_pro_team_id": 1,
+                        "player_score_projection": 14.2,
+                        "player_score_actual": 6.8
+                    },
+                    {
+                        "player_id": 17427,
+                        "player_position": "K",
+                        "player_full_name": "Cairo Santos",
+                        "player_pro_team_id": 3,
+                        "player_score_projection": 8.2,
+                        "player_score_actual": 4.0
+                    }
+                ],
+                "ir": [
+                    {
+                        "player_id": 4372066,
+                        "player_position": null,
+                        "player_full_name": "Jake Moody",
+                        "player_pro_team_id": 25,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
+                    }
+                ],
+                "bench": [
+                    {
+                        "player_id": 4262921,
+                        "player_position": null,
+                        "player_full_name": "Justin Jefferson",
+                        "player_pro_team_id": 16,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 4430737,
+                        "player_position": null,
+                        "player_full_name": "Kyren Williams",
+                        "player_pro_team_id": 14,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0
+                    },
+                    {
+                        "player_id": 3895856,
+                        "player_position": null,
+                        "player_full_name": "Christian Kirk",
+                        "player_pro_team_id": 30,
+                        "player_score_projection": 11.3,
+                        "player_score_actual": 6.9
+                    },
+                    {
+                        "player_id": 4361579,
+                        "player_position": null,
+                        "player_full_name": "Javonte Williams",
+                        "player_pro_team_id": 7,
+                        "player_score_projection": 12.4,
+                        "player_score_actual": 4.6
+                    },
+                    {
+                        "player_id": 3128429,
+                        "player_position": null,
+                        "player_full_name": "Courtland Sutton",
+                        "player_pro_team_id": 7,
+                        "player_score_projection": 12.1,
+                        "player_score_actual": 15.3
+                    },
+                    {
+                        "player_id": 16757,
+                        "player_position": null,
+                        "player_full_name": "Derek Carr",
+                        "player_pro_team_id": 18,
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
+                    },
+                    {
+                        "player_id": 3123076,
+                        "player_position": null,
+                        "player_full_name": "David Njoku",
+                        "player_pro_team_id": 5,
+                        "player_score_projection": 9.7,
+                        "player_score_actual": 8.1
                     }
                 ]
             },
             "home": {
                 "team_id": 9,
-                "team_score": 132.3,
+                "team_score": 105.2,
                 "starters": [
+                    {
+                        "player_id": 4429795,
+                        "player_position": "RB",
+                        "player_full_name": "Jahmyr Gibbs",
+                        "player_pro_team_id": 8,
+                        "player_score_projection": 16.3,
+                        "player_score_actual": 12.1
+                    },
+                    {
+                        "player_id": 3929630,
+                        "player_position": "RB",
+                        "player_full_name": "Saquon Barkley",
+                        "player_pro_team_id": 21,
+                        "player_score_projection": 19.2,
+                        "player_score_actual": 7.4
+                    },
                     {
                         "player_id": 16737,
                         "player_position": "WR",
                         "player_full_name": "Mike Evans",
                         "player_pro_team_id": 27,
-                        "player_score_projection": 14.9,
-                        "player_score_actual": 23.2
+                        "player_score_projection": 13.7,
+                        "player_score_actual": 5.4
                     },
                     {
                         "player_id": 2976499,
                         "player_position": "WR",
                         "player_full_name": "Amari Cooper",
                         "player_pro_team_id": 5,
-                        "player_score_projection": 12.8,
-                        "player_score_actual": 10.0
+                        "player_score_projection": 11.7,
+                        "player_score_actual": 8.2
                     },
                     {
                         "player_id": 4366031,
                         "player_position": "FLEX",
                         "player_full_name": "Tank Dell",
                         "player_pro_team_id": 34,
-                        "player_score_projection": 10.8,
-                        "player_score_actual": 7.3
-                    },
-                    {
-                        "player_id": 4683062,
-                        "player_position": "FLEX",
-                        "player_full_name": "Xavier Worthy",
-                        "player_pro_team_id": 12,
-                        "player_score_projection": 11.4,
-                        "player_score_actual": 11.8
+                        "player_score_projection": 13.0,
+                        "player_score_actual": 18.7
                     },
                     {
                         "player_id": 3915511,
                         "player_position": "QB",
                         "player_full_name": "Joe Burrow",
                         "player_pro_team_id": 4,
-                        "player_score_projection": 17.6,
-                        "player_score_actual": 33.7
+                        "player_score_projection": 18.8,
+                        "player_score_actual": 19.7
                     },
                     {
-                        "player_id": 3117256,
+                        "player_id": 4430027,
                         "player_position": "TE",
-                        "player_full_name": "Dalton Schultz",
-                        "player_pro_team_id": 34,
-                        "player_score_projection": 7.3,
-                        "player_score_actual": 7.4
+                        "player_full_name": "Sam LaPorta",
+                        "player_pro_team_id": 8,
+                        "player_score_projection": 10.0,
+                        "player_score_actual": 12.2
                     },
                     {
                         "player_id": 2971573,
                         "player_position": "K",
                         "player_full_name": "Ka'imi Fairbairn",
                         "player_pro_team_id": 34,
-                        "player_score_projection": 8.1,
-                        "player_score_actual": 16.0
+                        "player_score_projection": 8.3,
+                        "player_score_actual": 11.0
                     },
                     {
                         "player_id": 4038815,
-                        "player_position": "RB",
+                        "player_position": "FLEX",
                         "player_full_name": "Rico Dowdle",
                         "player_pro_team_id": 6,
-                        "player_score_projection": 10.4,
-                        "player_score_actual": 19.4
-                    },
-                    {
-                        "player_id": 4038441,
-                        "player_position": "RB",
-                        "player_full_name": "Justice Hill",
-                        "player_pro_team_id": 33,
-                        "player_score_projection": 8.8,
-                        "player_score_actual": 3.5
+                        "player_score_projection": 11.8,
+                        "player_score_actual": 10.5
                     }
                 ],
                 "ir": [],
                 "bench": [
                     {
-                        "player_id": 4429795,
+                        "player_id": 4683062,
                         "player_position": null,
-                        "player_full_name": "Jahmyr Gibbs",
-                        "player_pro_team_id": 8,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
-                    },
-                    {
-                        "player_id": 3929630,
-                        "player_position": null,
-                        "player_full_name": "Saquon Barkley",
-                        "player_pro_team_id": 21,
+                        "player_full_name": "Xavier Worthy",
+                        "player_pro_team_id": 12,
                         "player_score_projection": 0.0,
                         "player_score_actual": 0
                     },
@@ -1451,16 +1461,16 @@
                         "player_position": null,
                         "player_full_name": "Jaylen Warren",
                         "player_pro_team_id": 23,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0.0
+                        "player_score_projection": 7.5,
+                        "player_score_actual": 4.8
                     },
                     {
                         "player_id": 3916433,
                         "player_position": null,
                         "player_full_name": "Jakobi Meyers",
                         "player_pro_team_id": 13,
-                        "player_score_projection": 11.7,
-                        "player_score_actual": 13.2
+                        "player_score_projection": 0.0,
+                        "player_score_actual": 0.0
                     },
                     {
                         "player_id": 2577417,
@@ -1468,23 +1478,31 @@
                         "player_full_name": "Dak Prescott",
                         "player_pro_team_id": 6,
                         "player_score_projection": 18.0,
-                        "player_score_actual": 16.3
+                        "player_score_actual": 3.1
                     },
                     {
-                        "player_id": 4430027,
+                        "player_id": 3117256,
                         "player_position": null,
-                        "player_full_name": "Sam LaPorta",
-                        "player_pro_team_id": 8,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
+                        "player_full_name": "Dalton Schultz",
+                        "player_pro_team_id": 34,
+                        "player_score_projection": 8.5,
+                        "player_score_actual": 6.7
                     },
                     {
                         "player_id": 4429025,
                         "player_position": null,
                         "player_full_name": "Quentin Johnston",
                         "player_pro_team_id": 24,
-                        "player_score_projection": 0.0,
-                        "player_score_actual": 0
+                        "player_score_projection": 8.9,
+                        "player_score_actual": 5.2
+                    },
+                    {
+                        "player_id": 4038441,
+                        "player_position": null,
+                        "player_full_name": "Justice Hill",
+                        "player_pro_team_id": 33,
+                        "player_score_projection": 8.5,
+                        "player_score_actual": 1.4
                     }
                 ]
             }

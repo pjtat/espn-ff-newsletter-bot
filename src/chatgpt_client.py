@@ -92,7 +92,6 @@ def generate_newsletter_intro(newsletter_text):
     - The intro should be 3-4 sentences.
     - The intro should align with the provided information and NOT repeat it.   
     - The intro should be engaging and capture the attention of the reader.
-    - Always start the intro with "I'VE BEEN IN THIS BUSINESS FOR 30 YEARS"
     - DO NOT REPEAT YOURSELF
 
     CREATE A {NEWSLETTER_PERSONALITY['name']}-STYLE RECAP THAT CAPTURES THEIR ESSENCE WHILE MEETING ALL REQUIREMENTS!
