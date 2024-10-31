@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 import os
-from config import sender_email, sender_password, recipient_emails, NEWSLETTER_PERSONALITY
+from config import sender_email, sender_password, recipient_emails, NEWSLETTER_PERSONALITY_NAME
 
 def send_email(subject, html_body):
     try:
@@ -21,21 +21,13 @@ def send_email(subject, html_body):
         logo_cid = f'logo_{os.path.getmtime(logo_path)}'  # Use file modification time as part of CID
         image.add_header('Content-ID', f'<{logo_cid}>')
         msg.attach(image)
-
-        # Attach the newsletter personality headshot
-        with open('newsletter_personality_headshot.png', 'rb') as f:
-            img_data = f.read()
-        image = MIMEImage(img_data, name=os.path.basename('newsletter_personality_headshot.png'))
-        image.add_header('Content-ID', '<newsletter_personality_headshot>')
-        msg.attach(image)
-
-        # Modify html_body to include images with the unique identifier
+        
+        # Modify html_body to include logo with the unique identifier
         centered_logo_html = f'<div style="text-align: center;"><img src="cid:{logo_cid}" alt="Logo"></div>'
-        newsletter_personality_headshot = '<img src="cid:newsletter_personality_headshot" alt="Newsletter Personality Headshot">'
 
-        newsletter_personality_signature = f"Best, <br>{NEWSLETTER_PERSONALITY['name']}<br>"
+        newsletter_personality_signature = f"Best, <br>{NEWSLETTER_PERSONALITY_NAME}<br>"
 
-        html_body = f'{centered_logo_html}<br>{html_body}<br>{newsletter_personality_signature}<br>{newsletter_personality_headshot}'
+        html_body = f'{centered_logo_html}<br>{html_body}<br>{newsletter_personality_signature}'
         msg.attach(MIMEText(html_body, 'html'))
 
         # Connect to the SMTP server

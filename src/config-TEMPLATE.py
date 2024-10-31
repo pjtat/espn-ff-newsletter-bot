@@ -40,31 +40,20 @@ LINEUP_SLOT_MAPPING = {
     '17': ('starters', 'K'),
 }
 
-# Define the personalities for the newsletter recaps
-NEWSLETTER_PERSONALITY = {
-    "name": "",
+# Define the newsletter personality 
+NEWSLETTER_PERSONALITY_NAME = "######"
+
+# Provide the structure of personality traits to provide ChatGPT
+NEWSLETTER_PERSONALITY_TRAITS_TEMPLATE = {
     "bio": "",
-    "catchphrases": [
-        ""
-    ],
     "tone_characteristics": [
         ""
     ],
-    "fantasy_football_adaptations": {
-        "common_reactions": [
-            ""
-        ],
-        "analysis_style": [
-            ""
-        ],
-        "signature_segments": [
-            ""
-        ]
-    },
+    "fantasy_football_adaptations": [
+
+    ],
     "formatting_preferences": {
         "capitalization": "",
-        "punctuation": "",
-        "paragraph_structure": "",
-        "emphasis_patterns": ["", "", ""]
+        "punctuation": ""
     }
 }

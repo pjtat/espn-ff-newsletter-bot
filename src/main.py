@@ -4,7 +4,7 @@ from file_exporter import FileExporter
 from chatgpt_client import *
 from data_extractor import *
 from email_client import send_email
-from config import LEAGUE_NAME, NEWSLETTER_PERSONALITY
+from config import LEAGUE_NAME, NEWSLETTER_PERSONALITY_NAME
 
 def main():
     # # Initialize API client and JSON exporter
@@ -41,21 +41,25 @@ def main():
     # Temp - Export for testing
     file_exporter.save_json_file("consolidated_weekly_summary.json", consolidated_weekly_summary)
 
+    # Call ChatGPT to generate the traits/bio of the newsletter personality
+
+    newsletter_personality_traits = generate_newsletter_personality_traits(NEWSLETTER_PERSONALITY_NAME)
+
     # Call ChatGPT to generate recaps for each individual matchup
     newsletter_text = ""
 
     for matchup in consolidated_weekly_summary['weekly_boxscores']:
-        newsletter_text += generate_matchup_recap(matchup, newsletter_text)
+        newsletter_text += generate_matchup_recap(matchup, newsletter_text, newsletter_personality_traits)
         newsletter_text += "\n\n"
 
     # Temp - Export for testing
     file_exporter.save_txt_file("newsletter_text.txt", newsletter_text)
 
     # Call ChatGPT to generate an intro and closing for the newsletter
-    newsletter_intro = generate_newsletter_intro(newsletter_text)
+    newsletter_intro = generate_newsletter_intro(newsletter_text, newsletter_personality_traits)
     newsletter_standings = create_standings_list(team_data_summary)
     newsletter_weekly_high_points = determine_weekly_high_points(consolidated_weekly_summary)
-    newsletter_closing = generate_newsletter_closing(newsletter_text)
+    newsletter_closing = generate_newsletter_closing(newsletter_text, newsletter_personality_traits)
 
     # Combine the intro, recap, and closing into a single string
     newsletter_text = newsletter_intro + newsletter_text + newsletter_standings + newsletter_weekly_high_points + newsletter_closing
@@ -64,7 +68,7 @@ def main():
     fantasy_recap_html = convert_fantasy_recap_to_html(newsletter_text)
 
     # Send the generated recap via email
-    send_email(f"{LEAGUE_NAME} - Week {recap_week_number} Recap Provided by {NEWSLETTER_PERSONALITY['name']}", fantasy_recap_html)
+    send_email(f"TEST - {LEAGUE_NAME} - Week {recap_week_number} Recap Provided by {NEWSLETTER_PERSONALITY_NAME}", fantasy_recap_html)
 
 if __name__ == "__main__":
     main()

@@ -5,16 +5,16 @@
             "team_abbrev": "LAMB",
             "team_name": "D:cker Til She Waddles",
             "team_owner": "Sean Dobson",
-            "team_rank": 5,
+            "team_rank": 4,
             "team_record": {
-                "wins": 3,
-                "losses": 3,
+                "wins": 4,
+                "losses": 4,
                 "ties": 0,
                 "win_percentage": 0.5,
-                "points_for": 781.1,
-                "points_against": 737.5,
+                "points_for": 1055.1,
+                "points_against": 1010.1999999999999,
                 "streak_type": "WIN",
-                "streak_length": 2,
+                "streak_length": 1,
                 "team_current_projection_rank": 4
             }
         },
@@ -23,17 +23,17 @@
             "team_abbrev": "BEP",
             "team_name": "Youngh03, Big Kupps",
             "team_owner": "Brett Dusch",
-            "team_rank": 6,
+            "team_rank": 7,
             "team_record": {
                 "wins": 3,
-                "losses": 3,
+                "losses": 5,
                 "ties": 0,
-                "win_percentage": 0.5,
-                "points_for": 740.7,
-                "points_against": 723.5,
+                "win_percentage": 0.375,
+                "points_for": 965.0000000000001,
+                "points_against": 1001.2,
                 "streak_type": "LOSS",
-                "streak_length": 2,
-                "team_current_projection_rank": 6
+                "streak_length": 4,
+                "team_current_projection_rank": 7
             }
         },
         {
@@ -43,14 +43,14 @@
             "team_owner": "Nick Serafino",
             "team_rank": 1,
             "team_record": {
-                "wins": 6,
+                "wins": 8,
                 "losses": 0,
                 "ties": 0,
                 "win_percentage": 1.0,
-                "points_for": 831.9,
-                "points_against": 672.1,
+                "points_for": 1099.8999999999999,
+                "points_against": 876.9000000000001,
                 "streak_type": "WIN",
-                "streak_length": 6,
+                "streak_length": 8,
                 "team_current_projection_rank": 1
             }
         },
@@ -59,35 +59,35 @@
             "team_abbrev": "Zaun",
             "team_name": "Best Mahome in the Naberhood",
             "team_owner": "Jack Zaun",
-            "team_rank": 4,
+            "team_rank": 5,
             "team_record": {
                 "wins": 3,
-                "losses": 3,
+                "losses": 5,
                 "ties": 0,
-                "win_percentage": 0.5,
-                "points_for": 834.4000000000001,
-                "points_against": 717.8,
-                "streak_type": "WIN",
-                "streak_length": 1,
-                "team_current_projection_rank": 3
+                "win_percentage": 0.375,
+                "points_for": 1109.5000000000002,
+                "points_against": 1003.3,
+                "streak_type": "LOSS",
+                "streak_length": 2,
+                "team_current_projection_rank": 5
             }
         },
         {
             "team_id": 5,
-            "team_abbrev": "GOAT",
-            "team_name": "Las Chubacabras",
+            "team_abbrev": "KING",
+            "team_name": "Blunder King",
             "team_owner": "Brian Hoyson",
             "team_rank": 8,
             "team_record": {
-                "wins": 2,
-                "losses": 4,
+                "wins": 3,
+                "losses": 5,
                 "ties": 0,
-                "win_percentage": 0.3333333333333333,
-                "points_for": 677.7,
-                "points_against": 703.9,
+                "win_percentage": 0.375,
+                "points_for": 939.7,
+                "points_against": 981.6999999999999,
                 "streak_type": "LOSS",
                 "streak_length": 1,
-                "team_current_projection_rank": 9
+                "team_current_projection_rank": 8
             }
         },
         {
@@ -97,14 +97,14 @@
             "team_owner": "Ryan Boyle",
             "team_rank": 10,
             "team_record": {
-                "wins": 0,
-                "losses": 6,
+                "wins": 1,
+                "losses": 7,
                 "ties": 0,
-                "win_percentage": 0.0,
-                "points_for": 645.5,
-                "points_against": 822.3000000000002,
+                "win_percentage": 0.125,
+                "points_for": 892.3,
+                "points_against": 1062.7000000000003,
                 "streak_type": "LOSS",
-                "streak_length": 6,
+                "streak_length": 1,
                 "team_current_projection_rank": 10
             }
         },
@@ -112,17 +112,17 @@
             "team_id": 7,
             "team_abbrev": "BOZO",
             "team_name": "Bozos Dobbed Over Circus League",
-            "team_owner": "Peej Tatano",
+            "team_owner": "Pj Tatano",
             "team_rank": 2,
             "team_record": {
-                "wins": 5,
+                "wins": 7,
                 "losses": 1,
                 "ties": 0,
-                "win_percentage": 0.8333333333333334,
-                "points_for": 746.0,
-                "points_against": 670.1,
+                "win_percentage": 0.875,
+                "points_for": 963.5,
+                "points_against": 852.5,
                 "streak_type": "WIN",
-                "streak_length": 1,
+                "streak_length": 3,
                 "team_current_projection_rank": 2
             }
         },
@@ -133,15 +133,15 @@
             "team_owner": "Justin  Monito ",
             "team_rank": 3,
             "team_record": {
-                "wins": 4,
-                "losses": 2,
+                "wins": 5,
+                "losses": 3,
                 "ties": 0,
-                "win_percentage": 0.6666666666666666,
-                "points_for": 718.3000000000001,
-                "points_against": 729.3,
+                "win_percentage": 0.625,
+                "points_for": 945.3000000000001,
+                "points_against": 939.3,
                 "streak_type": "LOSS",
                 "streak_length": 1,
-                "team_current_projection_rank": 5
+                "team_current_projection_rank": 3
             }
         },
         {
@@ -151,15 +151,15 @@
             "team_owner": "Chris Allegretti",
             "team_rank": 9,
             "team_record": {
-                "wins": 2,
-                "losses": 4,
+                "wins": 3,
+                "losses": 5,
                 "ties": 0,
-                "win_percentage": 0.3333333333333333,
-                "points_for": 673.3,
-                "points_against": 813.5,
+                "win_percentage": 0.375,
+                "points_for": 855.8,
+                "points_against": 1023.9,
                 "streak_type": "WIN",
                 "streak_length": 1,
-                "team_current_projection_rank": 8
+                "team_current_projection_rank": 9
             }
         },
         {
@@ -167,17 +167,17 @@
             "team_abbrev": "FITZ",
             "team_name": "Rome wasn't built in Odunze",
             "team_owner": "Brendan Fitzpatrick",
-            "team_rank": 7,
+            "team_rank": 6,
             "team_record": {
-                "wins": 2,
-                "losses": 4,
+                "wins": 3,
+                "losses": 5,
                 "ties": 0,
-                "win_percentage": 0.3333333333333333,
-                "points_for": 763.4,
-                "points_against": 822.3000000000001,
-                "streak_type": "LOSS",
+                "win_percentage": 0.375,
+                "points_for": 1011.5999999999999,
+                "points_against": 1086.0,
+                "streak_type": "WIN",
                 "streak_length": 1,
-                "team_current_projection_rank": 7
+                "team_current_projection_rank": 6
             }
         }
     ]
