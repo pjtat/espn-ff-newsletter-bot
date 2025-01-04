@@ -6,6 +6,7 @@ sender_email = "#################@gmail.com"
 sender_password = "################"
 
 # List of recipient email addresses
+test_recipient_emails = ["########@gmail.com", "########@gmail.com"]
 recipient_emails = ["########@gmail.com", "########@gmail.com"]
 
 # League Name - Will be used in the subject line of the email
@@ -14,6 +15,9 @@ LEAGUE_NAME = ""
 # ESPN League Information
 # Reference README for more information on how to gather this information
 LEAGUE_ID = "######"
+
+# The year of the league - used to construct the base URL for ESPN API requests
+LEAGUE_YEAR = ####
 
 # Additional ESPN League Information required for private leagues
 # Reference README for more information on how to gather this information

@@ -67,7 +67,7 @@ def generate_matchup_recap(individual_matchup_summary, newsletter_text, personal
 
     return response.choices[0].message.content.strip()
 
-def generate_newsletter_intro(newsletter_text, personality_bio):
+def generate_newsletter_intro(newsletter_text, personality_bio, special_instructions=""):
     """
     Generates an intro for the newsletter.
     """
@@ -81,6 +81,9 @@ def generate_newsletter_intro(newsletter_text, personality_bio):
 
     Personality Profile:
     {json.dumps(personality_bio, indent=2)}
+
+    Special Instructions:
+    {special_instructions}
 
     Writing Guidelines:
     1. PERSONALITY & TONE:
@@ -108,7 +111,7 @@ def generate_newsletter_intro(newsletter_text, personality_bio):
 
     return response.choices[0].message.content.strip()
 
-def generate_newsletter_closing(newsletter_text, personality_bio):
+def generate_newsletter_closing(newsletter_text, personality_bio, special_instructions=""):
     """
     Generates a closing for the newsletter.
     """
@@ -123,6 +126,9 @@ def generate_newsletter_closing(newsletter_text, personality_bio):
     Personality Profile:
     {json.dumps(personality_bio, indent=2)}
 
+    Special Instructions:
+    {special_instructions}
+
     Writing Guidelines:
     1. PERSONALITY & TONE:
     - Match the provided personality bio
@@ -134,6 +140,36 @@ def generate_newsletter_closing(newsletter_text, personality_bio):
     - The closing should be engaging and capture the attention of the reader.
 
     Create a closing that embodies this personality while wrapping up the newsletter!
+    """   
+    
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are the stated personality writing a fantasy football recap newsletter."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=4000,
+        n=1,
+        temperature=0.7,
+    )
+
+    return response.choices[0].message.content.strip()
+
+def generate_end_of_season_summary(medal_winners):
+    # Define the prompt for the ChatGPT API call
+    prompt = f"""
+    Generate a {NEWSLETTER_PERSONALITY_NAME}-style fantasy football recap for the league.
+
+    Medal Winners:
+    {json.dumps(medal_winners, indent=2)}
+
+    Writing Guidelines:
+    1. PERSONALITY & TONE:
+    - Match the provided personality bio
+
+    2. CLOSING REQUIREMENTS:
+    - This was the final week of the season. Generate a summary of the end of the season and the medal winners (gold, silver, bronze).
+    - The summary should be 2-3 sentences.
     """   
     
     response = client.chat.completions.create(

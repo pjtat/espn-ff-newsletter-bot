@@ -2,12 +2,12 @@ import requests
 from datetime import datetime
 
 # Bring in variables needed for API requests 
-from config import LEAGUE_ID, ESPN_COOKIES, HEADERS
+from config import LEAGUE_ID, ESPN_COOKIES, HEADERS, LEAGUE_YEAR
 
 class ESPNApiClient:
     def __init__(self):
         # Figure out the current year in order to construct the base URL
-        current_year = datetime.now().year
+        current_year = LEAGUE_YEAR
 
         # Construct the base URL for ESPN Fantasy Football API requests
         self.base_url = f'https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{current_year}/segments/0/leagues/{LEAGUE_ID}'
@@ -41,3 +41,18 @@ class ESPNApiClient:
         # Fetch team data for the league
         return self._make_request({"view": "mNav"})
     
+    def get_matchup_data(self, season_week):
+        # Fetch matchup data for the provided week
+        return self._make_request({"view": "mMatchupScore", "scoringPeriodId": season_week})
+    
+    def get_playoff_matchups(self):
+        # Fetch playoff matchups for the league
+        return self._make_request({"view": "mProjectedPlayoffMatchups", "matchupPeriodId": "1"})
+    
+    def get_league_settings(self):
+        # Fetch league settings for the league
+        return self._make_request({"view": "mSettings"})
+    
+    def get_team_standings(self):
+        # Fetch team standings for the league
+        return self._make_request({"view": "mStandings"})

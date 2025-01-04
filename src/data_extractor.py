@@ -126,7 +126,7 @@ def create_team_data_summary(mTeam_json):
             'team_abbrev': team['abbrev'],
             'team_name': team['name'],
             'team_owner': owner_name,
-            'team_rank': team['playoffSeed'],
+            'team_rank': team['rankCalculatedFinal'],
             'team_record': {
                 'wins': team['record']['overall']['wins'],
                 'losses': team['record']['overall']['losses'],
@@ -145,14 +145,43 @@ def create_team_data_summary(mTeam_json):
 
     return team_weekly_summary
 
+def determine_if_regular_season(current_week_number, matchup_data):
+    # Find week in matchup data and check playoffTierType
+    for matchup in matchup_data['schedule']:
+        if matchup['matchupPeriodId'] == current_week_number:
+            playoff_tier_type = matchup['playoffTierType']
+            break
+
+    if playoff_tier_type == "NONE":
+        is_regular_season = True
+    else:
+        is_regular_season = False
+
+    return is_regular_season
+
+def determine_if_end_of_season(league_data):
+    # Pull the current week number from the league data
+    current_week_number = league_data['status']['currentMatchupPeriod']
+    final_scoring_period = league_data['status']['finalScoringPeriod']
+
+    if current_week_number == final_scoring_period:
+        is_end_of_season = True
+    else:
+        is_end_of_season = False
+
+    return is_end_of_season
+
 def determine_recap_week_number(league_data):
     # Pull the current week number from the league data
     current_week_number = league_data['status']['currentMatchupPeriod']
-    
-    # Subtract 1 from the current week number to get the previous week's recap
-    previous_week_number = current_week_number - 1
+    final_scoring_period = league_data['status']['finalScoringPeriod']
 
-    return previous_week_number
+    if current_week_number == final_scoring_period:
+        recap_week_number = current_week_number
+    else:
+        recap_week_number = current_week_number - 1
+
+    return recap_week_number
 
 def add_team_data_to_weekly_summary(boxscore_weekly_summary, team_weekly_summary):
     """
@@ -180,9 +209,9 @@ def create_standings_list(team_data_summary):
     """
 
     # Convert the JSON data into teams list first
-    teams = team_data_summary["teams"]  # Assuming your JSON is stored in 'data'
+    teams = team_data_summary["teams"]  
 
-    # Sort teams by projected rank
+    # Sort teams by rank
     sorted_teams = sorted(teams, key=lambda x: x["team_rank"])
 
     # Print teams in order of projected rank

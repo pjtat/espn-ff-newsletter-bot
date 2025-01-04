@@ -1,0 +1,413 @@
+{
+    "draftDetail": {
+        "drafted": true,
+        "inProgress": false
+    },
+    "gameId": 1,
+    "id": 963482,
+    "schedule": [
+        {
+            "matchupPeriodId": 1,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 1,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 1,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 1,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 1,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 2,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 2,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 2,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 2,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 2,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 3,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 3,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 3,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 3,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 3,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 4,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 4,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 4,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 4,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 4,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 5,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 5,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 5,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 5,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 5,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 6,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 6,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 6,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 6,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 6,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 7,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 7,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 7,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 7,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 7,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 8,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 8,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 8,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 8,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 8,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 9,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 9,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 9,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 9,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 9,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 10,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 10,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 10,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 10,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 10,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 11,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 11,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 11,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 11,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 11,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 12,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 12,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 12,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 12,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 12,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 13,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 13,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 13,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 13,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 13,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 14,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 14,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 14,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 14,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 14,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 15,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 15,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 15,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 15,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 15,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 15,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 16,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 16,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 16,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 16,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 16,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 17,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 17,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 17,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 17,
+            "projected": false
+        },
+        {
+            "matchupPeriodId": 17,
+            "projected": false
+        }
+    ],
+    "scoringPeriodId": 18,
+    "seasonId": 2024,
+    "segmentId": 0,
+    "status": {
+        "activatedDate": 1721264042323,
+        "createdAsLeagueType": 0,
+        "currentLeagueType": 0,
+        "currentMatchupPeriod": 17,
+        "finalScoringPeriod": 17,
+        "firstScoringPeriod": 1,
+        "isActive": true,
+        "isExpired": false,
+        "isFull": true,
+        "isPlayoffMatchupEdited": false,
+        "isToBeDeleted": false,
+        "isViewable": true,
+        "isWaiverOrderEdited": false,
+        "latestScoringPeriod": 18,
+        "previousSeasons": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023
+        ],
+        "standingsUpdateDate": 1735894760142,
+        "teamsJoined": 10,
+        "transactionScoringPeriod": 18,
+        "waiverLastExecutionDate": 1735894760076,
+        "waiverProcessStatus": {
+            "2024-09-04T07:07:11.163+00:00": 1,
+            "2024-09-11T07:45:57.433+00:00": 2,
+            "2024-09-18T07:59:03.292+00:00": 6,
+            "2024-09-19T08:03:21.737+00:00": 1,
+            "2024-10-02T08:34:54.976+00:00": 5,
+            "2024-10-09T07:01:57.551+00:00": 2,
+            "2024-10-11T07:32:01.388+00:00": 1,
+            "2024-10-16T07:20:14.484+00:00": 2,
+            "2024-10-18T07:57:54.531+00:00": 2,
+            "2024-10-23T07:46:10.152+00:00": 5,
+            "2024-10-24T07:23:36.580+00:00": 1,
+            "2024-10-30T07:54:55.905+00:00": 2,
+            "2024-11-06T09:43:43.738+00:00": 7,
+            "2024-11-13T09:27:36.986+00:00": 5,
+            "2024-11-20T09:13:03.931+00:00": 4,
+            "2024-11-27T08:31:15.903+00:00": 2,
+            "2024-11-28T08:39:28.673+00:00": 1,
+            "2024-12-04T09:26:27.681+00:00": 2,
+            "2024-12-11T09:34:58.998+00:00": 3,
+            "2024-12-18T08:03:47.942+00:00": 3,
+            "2024-12-25T08:13:15.331+00:00": 1
+        }
+    }
+}

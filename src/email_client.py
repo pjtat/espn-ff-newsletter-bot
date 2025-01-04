@@ -3,9 +3,9 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 import os
-from config import sender_email, sender_password, recipient_emails, NEWSLETTER_PERSONALITY_NAME
+from config import sender_email, sender_password, NEWSLETTER_PERSONALITY_NAME
 
-def send_email(subject, html_body):
+def send_email(subject, html_body, recipient_emails):
     try:
         # Create the email
         msg = MIMEMultipart()
